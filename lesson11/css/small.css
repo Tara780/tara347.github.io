@@ -1,0 +1,611 @@
+body {
+  font-size: 14px;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.75;
+}
+
+/***** Message banner *****************/
+.showbanner {
+  display: block;
+  text-align: center;
+  font-size: 1.25em;
+  line-height: 1.25em;
+  background-color: #e7f4cd;
+  padding: 0.9rem;
+}
+
+.hidebanner {
+  display: none;
+}
+
+/*** Header *****************************************/
+header,
+footer {
+  background-color: #4d7298;
+  color: #fff;
+  text-align: center;
+  margin: auto;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header img {
+  display: flex;
+  width: 50px;
+  padding: 0.75rem;
+}
+
+.headings {
+  padding-right: 0.75rem;
+  display: flex;
+  flex-direction: column;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Marcellus', serif;
+}
+
+h1 {
+  font-family: 'Marcellus SC', serif;
+  font-size: 1.7em;
+  margin-bottom: 0.4em;
+  line-height: 1.15em;
+}
+
+.headings div {
+  font-size: 0.7em;
+  margin: -0.5rem 0 1rem 0;
+  font-style: italic;
+  font-weight: bold;
+  color: rgb(255, 255, 255, 0.6);
+}
+
+h2 {
+  font-size: 1.5em;
+  text-align: center;
+  margin: 0 auto;
+}
+
+/*** Navigation *************************************/
+nav {
+  background-color: #77a6b6;
+  color: black;
+  text-align: center;
+  margin: auto;
+  font-weight: bold;
+  font-size: 1.25em;
+}
+
+.navigation {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.navigation li:first-child {
+  display: block;
+}
+
+.navigation li {
+  display: none;
+}
+
+.navigation a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 0.75rem;
+  text-decoration: none;
+}
+
+.navigation a:hover {
+  background-color: #9dc3c2;
+}
+
+.navigation .active {
+  color: #fff;
+  text-shadow: 0 0 2px rgb(31, 45, 58), 0 0 10px rgb(31, 45, 58);
+}
+
+.responsive li {
+  display: block;
+}
+
+/*** Main *******************************************/
+main {
+  padding-top: 1rem;
+  max-width: 1080px;
+  margin: auto;
+}
+
+/*** Home Page: Banner Image ************************/
+div.banner-image img {
+  width: 100%;
+  margin-top: -1rem;
+}
+
+/*** Home Page: Feature *****************************/
+div.feature {
+  background-color: #e7f4cd;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+/*** Home Page: Local Towns *************************/
+div.towns {
+  background-color: #d0efb1;
+  margin: 1rem;
+  padding: 0.75rem;
+}
+
+div.town-data {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  align-content: center;
+}
+
+div.town-data section {
+  display: grid;
+  grid-template-rows: auto;
+  justify-content: space-between;
+  width: 97%;
+  margin: 0.5rem 0;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+div.town-data section div.town-info {
+  margin: 1rem;
+}
+
+div.town-data section h3 {
+  font-size: 1.25rem;
+  text-align: center;
+  margin: 0;
+}
+
+div.town-data section p {
+  font-size: 0.8rem;
+  text-align: center;
+  line-height: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+div.town-data section p.motto {
+  font-weight: bold;
+  font-style: italic;
+}
+
+div.town-data section div.town-image {
+  display: grid;
+}
+
+div.town-data section div.town-image img {
+  display: grid;
+  align-self: end;
+  width: 100%;
+}
+
+/*** Location Pages: Hero Image / Weather Summary ***/
+.town-feature {
+  position: relative;
+  margin: 1rem;
+}
+
+.hero-image {
+  width: 100%;
+  overflow: hidden;
+}
+
+.hero-image img {
+  width: 120%;
+  margin-left: -3rem;
+}
+
+.weather-summary {
+  position: absolute;
+  top: 1.5rem;
+  left: 1.5rem;
+  background-color: rgba(231, 244, 205, 0.8);
+  padding: 1rem;
+}
+
+.weather-summary h3 {
+  font-size: 1.1em;
+  margin: 0;
+}
+
+.ws-content {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-gap: 0 0.5rem;
+  margin: 0;
+  border-top: 1px solid rgba(0, 0, 0, 0.3);
+  font-size: 0.9em;
+}
+
+.ws-content div {
+  margin: 0;
+  line-height: 1.1rem;
+}
+
+.col1 {
+  display: grid;
+  justify-items: end;
+}
+
+/*** Location Pages: Forecast ************************/
+.forecast-section {
+  display: none;
+  background-color: #d0efb1;
+  margin: 1rem;
+  padding: 2rem 1rem;
+}
+
+.forecast-section h3 {
+  font-size: 1.25em;
+  text-align: center;
+  margin: -0.5rem 0 0.5rem 0;
+}
+
+div.forecast {
+  width: 500px;
+  margin: 0 auto;
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  background-color: white;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  border-left: 1px solid rgba(0, 0, 0, 0.3);
+  border-top: 1px solid rgba(0, 0, 0, 0.4); 
+}
+
+div.forecast div.forecast-image {
+  display: grid; 
+  justify-items: center;
+  width: 100%;
+  border-right: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+div.forecast div.forecast-image img {
+  padding: 0.75rem;
+}
+
+div.forecast div.forecast-label {
+  text-align: center;
+  width: 99%;
+  line-height: 2rem;
+  font-weight: bold;
+  color: white;
+  background-color: #5b7a53;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+div.forecast div.forecast-temp {
+  display: inline;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 0.2rem;
+  border-right: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+/*** Location Pages: Events *************************/
+div.events-section {
+  background-color: #b3d89c;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+div.events-section h3 {
+  font-size: 1.25em;
+  padding-bottom: 0.5rem;
+  margin: -0.5rem 0 0.5rem 0;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+}
+
+/*** Location Pages: Article ************************/
+.article {
+  background-color: #95c687;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+.article-img {
+  display: block;
+  margin: 1rem auto;
+  width: 90%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.article-title {
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.author {
+  font-style: italic;
+  margin-top: 0;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+/*** Gallery Page ***********************************/
+.pic-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  padding: 2rem;
+  margin: auto;
+}
+
+figure {
+  display: grid;
+  align-content: space-between;
+  justify-content: center;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.2);
+}
+
+figure img {
+  display: grid;
+  width: 100%;
+  filter: blur(0em);
+  transition: filter 0.5s;
+}
+
+figure img[data-src] {
+  filter: blur(0.2em);
+}
+
+figure figcaption {
+  display: none;
+  padding: 1rem;
+  text-align: center;
+  align-items: center;
+  max-width: 270px;
+  font-size: 0.9rem;
+}
+
+/*** Storm Center Page ******************************/
+p.center {
+  text-align: center;
+  padding: 0 0.75rem;
+}
+
+div.vspace {
+  height: 36px;
+}
+
+.red {
+  color: #990000;
+}
+
+/*** Storm Center Page: Form Settings ***************/
+form fieldset {
+  margin: 2rem 2%;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 0 4% 2rem 4%;
+}
+
+form fieldset.color1 {
+  background-color: #e7f4cd;
+}
+
+form fieldset.color2 {
+  background-color: #d0efb1;
+}
+
+form fieldset.color3 {
+  background-color: #b3d89c;
+}
+
+form legend {
+  font-family: 'Marcellus', serif;
+  font-size: 1.25rem;
+  margin: 0 1rem;
+  padding: 0 0.5rem;
+  text-shadow: white 1px 1px, white -1px 1px, white 2px 2px 2px, white -2px 2px 2px,
+    white 3px 3px 4px, white -3px 3px 4px, white 4px 4px 6px, white -4px 4px 6px,
+    white 5px 5px 8px, white -5px 5px 8px, white 6px 6px 10px, white -6px 6px 10px;
+}
+
+form label.top,
+form div {
+  display: block;
+  padding-top: 1rem;
+}
+
+form label.top input,
+form label.top select,
+form label.top textarea {
+  -webkit-appearance: none;
+  display: block;
+  font-size: 1rem;
+  border: solid 1px #999;
+  border-radius: 4px;
+  padding: 0.75rem;
+  color: #555;
+  width: 89%;
+  max-width: 20rem;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+form label input:focus,
+form label select:focus,
+form label textarea:focus {
+  border: 1px solid black;
+  outline: none !important;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+}
+
+form label.sbs {
+  display: block;
+  padding: 0.75rem;
+  color: #555;
+}
+
+form label.top input:focus:required:invalid {
+  border-color: #990000;
+}
+
+/*** Storm Center Page: Storm Severity Slider *******/
+form label.severity span.severitylabels {
+  max-width: 21.5rem;
+  display: flex;
+  justify-content: space-between;
+  color: #474747;
+  padding: 0;
+  margin-bottom: -10px;
+}
+
+form label.severity span.severitylabels span.labelbox {
+  display: flex;
+  width: 20px;
+  justify-content: center;
+  padding: 0;
+}
+
+form label.severity span.severitylabels span.labelbox span {
+  padding-top: 0;
+  font-size: 0.8rem;
+}
+
+form label.severity input {
+  -webkit-appearance: none;
+  display: block;
+  max-width: 21.5rem;
+  background-color: #d0efb1;
+}
+
+input[type=range] {
+  margin: 20px 0 10px 0;
+  width: 100%;
+}
+
+/* Slider styling in Chrome */
+input[type=range]::-webkit-slider-runnable-track {
+  height: 3px;
+  background: rgb(134, 134, 134);
+}
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  border: 1px solid #555;
+  height: 28px;
+  width: 20px;
+  border-radius: 4px;
+  background: rgb(228, 228, 228);
+  margin-top: -12px;
+}
+
+
+/* Slider styling in Firefox */
+input[type=range]::-moz-range-track {
+  height: 3px;
+  background: rgb(134, 134, 134);
+}
+
+input[type=range]::-moz-range-thumb {
+  border: 1px solid #555;
+  height: 28px;
+  width: 20px;
+  border-radius: 4px;
+  background: rgb(228, 228, 228);
+  margin-top: -12px;
+}
+
+/*** Storm Center Page: Submit Button & Misc Items **/
+form label.top select.region {
+  width: 98%;
+  max-width: 21.5rem;
+}
+
+form div.divlabel {
+  padding-top: 1rem;
+}
+
+form input.submitBtn {
+  border: none;
+  background-color: #95c687;
+  border-radius: 10px;
+  padding: 0.5rem;
+  margin: 0 0 2rem 0;
+  width: 100%;
+  max-width: 15rem;
+  height: 3.5rem;
+  border: 2px solid black;
+  font-size: 1.25rem;
+}
+
+input[type="submit"]:hover {
+  background-color: rgba(149, 198, 135, 0.4);
+}
+
+form div.button-div {
+  margin: 2rem 2%;
+}
+
+/*** Contact Info ***********************************/
+.contact-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #77a6b6;
+  padding: 1rem;
+  margin-bottom: 0;
+}
+
+.contact-img {
+  display: none;
+  margin: 1em 1em 1em 2em;
+  width: 40%;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-img img {
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.6);
+}
+
+.contact-box {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+address {
+  font-style: normal;
+}
+
+address a {
+  color: black;
+  font-size: 0.8em;
+}
+
+/*** Footer *****************************************/
+footer {
+  font-size: 0.8em;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+footer a {
+  color: white;
+}

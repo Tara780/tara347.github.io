@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lazy Load Demo</title>
+  <meta name="description"
+    content="A demonstration of the lazy load progressive images technique using pictures of adorable kittens.">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" href="css/llstyles.css">
+</head>
+
+<body>
+  <header>
+    <h1>Lazy Load Demo</h1>
+    <h2>Tara Denniston</h2>
+  </header>
+  <main>
+    <picture>
+      <img src="images/placeholder.jpg" data-src="images/kitten1.jpg" alt="fluffy gray kitten looking up">
+      <figcaption>"It's good to be me."</figcaption>  
+    </picture>
+    <picture>
+      <img src="images/placeholder.jpg" data-src="images/kitten2.jpg" alt="black kitten staring intently">
+      <figcaption>"Just...stay right where you are."</figcaption>  
+    </picture>
+    <picture>
+      <img src="images/placeholder.jpg" data-src="images/kitten3.jpg" alt="calico kitten in a tree">
+      <figcaption>"I'll show you, dog! Right after I take a rest here in this tree."</figcaption>  
+    </picture>
+    <picture>
+      <img src="images/placeholder.jpg" data-src="images/kitten4.jpg" alt="orange tabby looking forlorn">
+      <figcaption>"I wonder if I'll survive until the human feeds me again."</figcaption>  
+    </picture>
+    <picture>
+      <img src="images/placeholder.jpg" data-src="images/kitten5.jpg" alt="gray tabby meowing on top of a stump">
+      <figcaption>"I am king!"</figcaption>  
+    </picture>
+    <picture>
+      <img src="images/placeholder.jpg" data-src="images/kitten6.jpg" alt="fluffy gray kitten">
+      <figcaption>"Cat hair. Don't care."</figcaption>  
+    </picture>
+    <picture>
+      <img src="images/placeholder.jpg" data-src="images/kitten7.jpg" alt="adorable white kitten">
+      <figcaption>"I know. You adore me."</figcaption>
+    </picture>
+    <picture>
+      <img src="images/placeholder.jpg" data-src="images/kitten8.jpg" alt="gray kitten playing with flowers">
+      <figcaption>"You won't get away from me this time!"</figcaption>
+    </picture>
+  </main>
+  <footer>
+    &copy; <span id="currentyear"></span> | <a href="../index.html">Tara Denniston</a> | Michigan | <a
+      href="https://www.byui.edu/online">BYUI Online Learning</a>
+    <div id="updated">Last Updated: <span id="lastupdated"></span></div>
+  </footer>
+  <script src="js/llscripts.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+  <script>
+    WebFont.load({
+      google: {
+        families: [
+          'Ribeye',
+          'Open Sans'
+        ]
+      }
+    });
+  </script>
+</body>
+
+</html>

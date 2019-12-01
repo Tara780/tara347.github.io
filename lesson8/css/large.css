@@ -1,0 +1,115 @@
+@media only screen and (min-width: 58em) {
+  /*** Header *****************************************/
+  header img {
+    width: 100px;
+  }
+
+  h1 {
+    font-size: 3em;
+  }
+
+  .headings div {
+    font-size: 1.25em;
+  }
+
+  h2 {
+    font-size: 2em;
+  }
+
+  /*** Navigation *************************************/
+  .navigation {
+    display: flex;
+  }
+
+  .navigation li:first-child {
+    display: none;
+  }
+
+  .navigation li {
+    display: block;
+    flex: 1 1 100%;
+  }
+
+  .section1,
+  .section2,
+  .section3 {
+    margin: 2rem 0;
+  }
+
+  /*** Location Pages: Hero Image / Weather Summary ***/
+  .section1 {
+    padding: 0;
+  }
+
+  .weather-summary {
+    padding: 1.5rem;
+  }
+
+  .weather-summary h3 {
+    font-size: 1.5em;
+  }
+
+  .ws-content {
+    font-size: 1.25em;
+  }
+
+  .ws-content div {
+    line-height: 1.75rem;
+  }
+
+  /*** Location Pages: Forecast ************************/
+  .section2 h3 {
+    font-size: 1.55em;
+  }
+
+  /*** Location Pages: Article ************************/
+  .section3 {
+    padding: 3rem;
+  }
+
+  .article-img {
+    width: 400px;
+  }
+
+  /*** Gallery Page ***********************************/
+  .pic-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  figure:hover {
+    box-shadow: 5px 5px 20px #333;
+  }
+
+  figure figcaption {
+    display: grid;
+  }
+
+  /*** Storm Center Page ******************************/
+  p.large {
+    font-size: 1.25rem;
+  }
+  
+  form fieldset {
+    margin: 2rem auto;
+    max-width: 87vw;
+  }
+
+  form div.button-div {
+    margin: 2rem auto;
+    max-width: 95vw;
+  }
+
+  form label.sbs {
+    padding: 0.4rem 0 0 0.75rem;
+  }
+
+  /*** Contact Info ***********************************/
+  address {
+    font-size: 1.2em;
+  }
+
+  address a {
+    font-size: 1em;
+  }
+
+}

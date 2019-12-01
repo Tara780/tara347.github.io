@@ -1,0 +1,149 @@
+body {
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.75;
+}
+
+header,
+footer {
+  background-color: #4d7298;
+  color: #fff;
+  text-align: center;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  margin: auto;
+  max-width: 1080px;
+}
+
+header img {
+  float: left;
+  width: 150px;
+}
+
+h1,
+h2 {
+  margin: 0 auto;
+}
+
+h1 {
+  font-family: 'Marcellus SC', serif;
+  font-size: 3em;
+}
+
+h2, h3 {
+  font-family: 'Marcellus', serif;
+  text-align: center;
+}
+
+h3,
+p {
+  margin: 2rem;
+}
+
+h3 {
+  font-size: 1.5em;
+  margin-bottom: -0.5rem;
+}
+
+h4 {
+  font-size: 1.25em;
+  margin-top: -0.5rem;
+  font-style: italic;
+}
+
+.logo {
+  display: flex;
+  font-family: 'Marcellus SC', serif;
+  font-size: 3em;
+  margin-bottom: -1rem;
+}
+
+#logo-pic {
+  padding: 1rem 1rem 0 2rem;
+  height: 75px;
+}
+
+#logo-text {
+  align-self: flex-end;
+  padding-top: 1rem;
+}
+
+nav {
+  background-color: #77a6b6;
+  color: #fff;
+  text-align: center;
+  max-width: 1080px;
+  margin: auto;
+  font-weight: bold;
+  font-size: 1.25em;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+nav li a {
+  display: block;
+  color: rgb(237, 237, 229);
+  color: rgb(56, 55, 50);
+  text-align: center;
+  padding: 0.75rem;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: #9dc3c2;
+  color: #fff;
+}
+
+.active {
+  font-family: 'Ribeye', cursive;
+  color: rgb(237, 237, 229);
+}
+
+main {
+ /* background-color: #dcf3c6; */
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  max-width: 1080px;
+  margin: auto;
+}
+
+#summary {
+  margin: 20px 50px 20px 50px;
+  height: 100px;
+  background-color: #e7f4cd;
+}
+
+#hero {
+  margin: 20px 50px 20px 50px;
+  height: 100px;
+  background-color: #d0efb1;
+}
+
+#forecast {
+  margin: 20px 50px 20px 50px;
+  height: 100px;
+  background-color: #b3d89c;
+}
+
+#article {
+  margin: 20px 50px 20px 50px;
+  height: 100px;
+  background-color: #95c687;
+}
+
+main li {
+  margin-left: 1rem;
+}
+
+#updated {
+  color: rgb(208, 206, 186);
+}
+
+footer a {
+  color: white;
+}

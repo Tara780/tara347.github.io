@@ -1,0 +1,154 @@
+body {
+  font-size: 14px;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.75;
+}
+
+header,
+footer {
+  background-color: #4d7298;
+  color: #fff;
+  text-align: center;
+  margin: auto;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header img {
+  display: flex;
+  width: 50px;
+  padding: 0.75rem;
+}
+
+.headings {
+  padding-right: 0.75rem;
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  font-family: 'Marcellus SC', serif;
+  font-size: 1.7em;
+  margin-bottom: 0.4em;
+  line-height: 1.15em;
+}
+
+.headings div {
+  font-size: 0.7em;
+  margin: -0.5rem 0 1rem 0;
+  font-style: italic;
+  font-weight: bold;
+  color: rgb(255, 255, 255, 0.6);
+}
+
+h2 {
+  font-size: 1.5em;
+  margin: 0 auto;
+}
+
+h2,
+h3 {
+  font-family: 'Marcellus', serif;
+  text-align: center;
+}
+
+h3,
+p {
+  margin: 2rem;
+}
+
+h3 {
+  font-size: 1.25em;
+  margin-bottom: -0.5rem;
+}
+
+nav {
+  background-color: #77a6b6;
+  color: black;
+  text-align: center;
+  margin: auto;
+  font-weight: bold;
+  font-size: 1.25em;
+}
+
+.navigation {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.navigation li:first-child {
+  display: block;
+}
+
+.navigation li{
+  display: none;
+}
+
+.navigation a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 0.75rem;
+  text-decoration: none;
+}
+
+.navigation a:hover {
+  background-color: #9dc3c2;
+}
+
+.navigation .active {
+  color: #fff;
+  text-shadow: 0 0 2px rgb(31, 45, 58), 0 0 10px rgb(31, 45, 58);
+}
+
+.responsive li {
+  display: block;
+}
+
+main {
+  padding-top: 1rem;
+  max-width: 1080px;
+  margin: auto;
+}
+
+main div {
+  margin: 1rem 0 1rem 0;
+  padding: 1rem;
+}
+
+.section1 {
+  background-color: #e7f4cd;
+}
+
+.section2 {
+  background-color: #d0efb1;
+}
+
+.section3 {
+  background-color: #b3d89c;
+}
+
+.section4 {
+  background-color: #77a6b6;
+  margin-bottom: 0;
+}
+
+main li {
+  margin-left: 1rem;
+}
+
+footer {
+  font-size: 0.8em;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+footer a {
+  color: white;
+}

@@ -1,0 +1,21 @@
+@media only screen and (min-width: 37.5em) {
+  nav ul {
+      display: flex;
+  }
+
+  nav li {
+    flex: 1 1 100%;
+  }
+
+  .color-sample, .typ-sample {
+    padding: 0.5rem 3rem;
+  }
+
+  .header-typ {
+    font-size: 3em;
+  }
+
+  .heading-typ {
+    font-size: 2em;
+  }
+}

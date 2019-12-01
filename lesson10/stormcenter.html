@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>First Watch Weather | Storm Center</title>
+  <meta name="description"
+    content="Storm Center - report a storm or unusual weather event in your travel area in southeastern Idaho">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" href="css/small.css">
+  <link rel="stylesheet" href="css/medium.css">
+  <link rel="stylesheet" href="css/large.css">
+</head>
+
+<body>
+  <header>
+    <img src="images/fwwlogo100.png" alt="sun rising behind rolling hills">
+    <section class="headings">
+      <h1>First Watch Weather</h1>
+      <div>Southeastern Idaho's source for local weather</div>
+    </section>
+  </header>
+  <nav>
+    <ul class="navigation">
+      <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="preston.html">Preston</a></li>
+      <li><a href="#">Soda Springs</a></li>
+      <li><a href="#">Fish Haven</a></li>
+      <li><a href="stormcenter.html" class="active">Storm Center</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+    </ul>
+  </nav>
+  <main>
+    <h2>Storm Center</h2>
+    <p class="center large">Use this form to report a storm or unusual weather event in your area.</p>
+    <form method="get" action="thanks.html">
+      <fieldset class="color1">
+        <legend>User Information</legend>
+        <label class="top">Full Name<span class="red">*</span> <input type="text" name="name" pattern="[a-zA-Z\s]{5,}" required></label>
+        <label class="top">Phone Number<span class="red">*</span> <input type="tel" name="phone" placeholder="2085555555" required></label>
+        <label class="top">Zip Code<span class="red">*</span> <input type="number" name="zip" required></label>
+        <label class="top">Email <input type="email" name="email" placeholder="someone@website.com"></label>
+      </fieldset>
+
+      <fieldset class="color2">
+        <legend>Storm Information</legend>
+        <label class="top">Storm Date <input type="date" name="date"></label>
+        <label class="top">Storm Type
+          <input list="storms" name="stormtype" placeholder="please select &#9662;">
+          <datalist id="storms">
+            <option value="Flash Flood">
+            <option value="Hail">
+            <option value="Hurricane">
+            <option value="Thunderstorm">
+            <option value="Tornado">
+          </datalist>
+        </label>
+        <div class="severity">
+          <label class="severity">Storm Severity 
+            <span class="severitylabels">
+              <span class="labelbox"><span>1</span></span>
+              <span class="labelbox"><span>2</span></span>
+              <span class="labelbox"><span>3</span></span>
+              <span class="labelbox"><span>4</span></span>
+              <span class="labelbox"><span>5</span></span>
+              <span class="labelbox"><span>6</span></span>
+              <span class="labelbox"><span>7</span></span>
+              <span class="labelbox"><span>8</span></span>
+              <span class="labelbox"><span>9</span></span>
+              <span class="labelbox"><span>10</span></span>
+            </span>
+            <input type="range" name="severity" value="5" min="1" max="10" step="1">
+          </label>
+        </div>
+        <label class="top">Storm Region
+          <select class="region" name="region">
+            <option value="" selected disabled hidden>please select &#9662;</option>
+            <option value="preston">Preston</option>
+            <option value="sugarcity">Sugar City</option>
+            <option value="fishhaven">Fish Haven</option>
+          </select>
+        </label>
+        <div class="divlabel">Are you in danger?</div>
+        <label class="sbs"><input type="radio" name="indanger" value="yes"> yes</label>
+        <label class="sbs"><input type="radio" name="indanger" value="maybe"> maybe</label>
+        <label class="sbs"><input type="radio" name="indanger" value="no"> no</label>
+      </fieldset>
+
+      <fieldset class="color3">
+        <legend>Additional Information</legend>
+        <label class="top">Comments <textarea name="comments" rows="7"></textarea></label>
+      </fieldset>
+      <div class="button-div">
+        <input type="submit" value="Report Storm" class="submitBtn">
+      </div>
+    </form>
+
+    <div class="section4">
+      <a class="contact-img" target="_blank"
+        href="https://www.google.com/maps/place/1447+E+800+N,+Preston,+ID+83263/@42.1904493,-112.1708372,9.75z/data=!4m5!3m4!1s0x8754581a4f93ab7b:0x559de40a2abcaec2!8m2!3d42.1111605!4d-111.841079?hl=en">
+        <img src="images/map550.jpg" alt="map of southeastern Idaho" srcset="images/map400.jpg 400w,
+        images/map550.jpg 550w" sizes="40vw">
+      </a>
+      <div class="contact-box">
+        <div class="contact">
+          <address>
+            <strong>First Watch Weather</strong><br>1447 E 800 North<br>Preston, ID 83263<br><br>&#9742;
+            208.555.2653<br>&#9993; <a href="mailto:info@firstwatchweather.com">info@firstwatchweather.com</a>
+          </address>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    &copy; First Watch Weather | <a href="attributions.html">Attributions</a> | <a href="../index.html">Tara Denniston</a>
+    <div><span id="currentdate"></span></div>
+  </footer>
+  <script src="js/scripts.js"></script>
+  <script src="js/galleryimages.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+  <script src="js/fonts.js"></script>
+
+</body>
+
+</html>

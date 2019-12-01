@@ -1,0 +1,57 @@
+body {
+  font-size: 1.0rem;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.5;
+}
+
+header, main, footer {
+  padding: 1.25em;
+  max-width: 1080px;
+  margin: auto;
+}
+
+header, footer {
+  background-color: rgb(79, 63, 94);
+  color: #fff;
+  text-align: center;
+}
+
+header {
+  margin-top: 16px;
+}
+
+h1 {
+  font-size: 2rem;
+  margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Ribeye', cursive;
+}
+
+main h2 {
+  font-size: 1.25rem;
+  border-bottom: 1px solid rgb(165, 165, 165);
+}
+
+footer {
+  padding: 10px;
+}
+
+#content {
+  padding-bottom: 24px;
+  color: rgb(53, 53, 53);
+}
+
+header img {
+  width: 200px;
+}
+
+#updated {
+  color: rgb(208, 206, 186);
+}
+
+footer a {
+  color: white;
+}
+

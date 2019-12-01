@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>First Watch Weather | Local Weather Conditions for Fish Haven, Idaho</title>
+  <meta name="description"
+    content="Fish Haven, Idaho weather - local weather conditions, 5-day forecast, and local events">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" href="css/small.css">
+  <link rel="stylesheet" href="css/medium.css">
+  <link rel="stylesheet" href="css/large.css">
+</head>
+
+<body>
+  <header>
+    <img src="images/fwwlogo100.png" alt="sun rising behind rolling hills">
+    <section class="headings">
+      <h1>First Watch Weather</h1>
+      <div>Southeastern Idaho's source for local weather</div>
+    </section>
+  </header>
+  <nav>
+    <ul class="navigation">
+      <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="preston.html">Preston</a></li>
+      <li><a href="sodasprings.html">Soda Springs</a></li>
+      <li><a href="fishhaven.html" class="active">Fish Haven</a></li>
+      <li><a href="stormcenter.html">Storm Center</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+    </ul>
+  </nav>
+  <main>
+    <h2>Fish Haven Idaho</h2>
+    <div class="town-feature">
+      <div class="hero-image">
+        <img src="images/fhhero1080.jpg" alt="a woman and her dog in a tent by a lake" srcset="images/fhhero527.jpg 527w,
+                     images/fhhero895.jpg 895w,
+                     images/fhhero1080.jpg 1080w" sizes="100vw">
+      </div>
+      <section class="weather-summary">
+        <h3>Weather Summary</h3>
+        <div class="ws-content">
+          <div class="col1">Currently:</div>
+          <div id="currentcondition"></div>
+          <div class="col1">Temperature:</div>
+          <div><span id="currenttemp"></span>&deg;F</div>
+          <div class="col1">Wind Chill:</div>
+          <div id=windchilllabel><span id="windchill"></span>&deg;F</div>
+          <div class="col1">Humidity:</div>
+          <div><span id="humidity"></span>%</div>
+          <div class="col1">Wind Speed:</div>
+          <div><span id="windspeed">12</span>mph</div>
+        </div>
+      </section>
+    </div>
+    <div class="forecast-section">
+      <h3>5 Day Forecast</h3>
+      <div class="forecast">
+        <div class="forecast-label" id="label0"></div>
+        <div class="forecast-label" id="label1"></div>
+        <div class="forecast-label" id="label2"></div>
+        <div class="forecast-label" id="label3"></div>
+        <div class="forecast-label" id="label4"></div>
+        <div class="forecast-image"><img id="image0" src="#" alt="weather condition icon"></div>
+        <div class="forecast-image"><img id="image1" src="#" alt="weather condition icon"></div>
+        <div class="forecast-image"><img id="image2" src="#" alt="weather condition icon"></div>
+        <div class="forecast-image"><img id="image3" src="#" alt="weather condition icon"></div>
+        <div class="forecast-image"><img id="image4" src="#" alt="weather condition icon"></div>
+        <div class="forecast-temp"><span id="temp0"></span>&deg;F</div>
+        <div class="forecast-temp"><span id="temp1"></span>&deg;F</div>
+        <div class="forecast-temp"><span id="temp2"></span>&deg;F</div>
+        <div class="forecast-temp"><span id="temp3"></span>&deg;F</div>
+        <div class="forecast-temp"><span id="temp4"></span>&deg;F</div>
+      </div>
+    </div>
+    <div class="events-section">
+      <h3>Upcoming Events in Fish Haven</h3>
+      <div class="events">
+      </div>
+    </div>
+    <div class="article">
+      <img class="article-img" src="images/fishing.jpg" alt="close-up photo of hands using a fishing pole">
+      <h3 class="article-title">A Fish Story</h3>
+      <h4 class="author">by Jennifer Jenkins</h4>
+      <p>Ed McCurty, long time resident of Fish Haven, likes to tell a story about a fish he once caught&mdash;or nearly
+        caught. About 20 years ago, rainbow trout were pretty rare in Bear Lake, but every now and then someone would
+        snag one of these rare beauties. Ed explains that he was fishing one quiet afternoon. He hadn't had much luck
+        and was about to go home when he felt a tug on his line. When he started to reel in, whatever was on his line
+        gave a fierce tug, and he almost lost control, so he knew that whatever was on the other end was
+        big&mdash;bigger than anything he had ever caught before. The struggle that ensued was the fiercest fight of his
+        life. Ed says he nearly lost his pole&mdash;twice. Then, when he had reeled the line in enough that the beast
+        was near the surface, there was a moment that the fish jumped out of the water in a graceful arc that seemed to
+        stretch out time. Ed says he got a very clear view of the monster. It was a magnificent rainbow trout at least
+        three feet long and probably forty pounds&mdash;bigger than any he had ever seen. At the moment the fish reached
+        the peak of the arc, the fish made eye contact with Ed, and seemed to communicate that today wasn't the day he
+        would be caught. When the fish hit the surface of the water, the line suddenly went slack. Ed expected the line
+        had broken, but when he reeled in, the hook was still attached and <i>clean</i>. Ed has no explanation for it,
+        other than to say that the fish was just plain stubborn enough to not get caught. He believes that the fish is
+        still out there, and he still holds out hope that he will one day get the one that got away.</p>
+    </div>
+    <div class="contact-section">
+      <a class="contact-img" target="_blank"
+        href="https://www.google.com/maps/place/1447+E+800+N,+Preston,+ID+83263/@42.1904493,-112.1708372,9.75z/data=!4m5!3m4!1s0x8754581a4f93ab7b:0x559de40a2abcaec2!8m2!3d42.1111605!4d-111.841079?hl=en">
+        <img src="images/map550.jpg" alt="map of southeastern Idaho" srcset="images/map400.jpg 400w,
+        images/map550.jpg 550w" sizes="40vw">
+      </a>
+      <div class="contact-box">
+        <div class="contact">
+          <address>
+            <strong>First Watch Weather</strong><br>1447 E 800 North<br>Preston, ID 83263<br><br>&#9742;
+            208.555.2653<br>&#9993; <a href="mailto:info@firstwatchweather.com">info@firstwatchweather.com</a>
+          </address>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    &copy; First Watch Weather | <a href="attributions.html">Attributions</a> | <a href="../index.html">Tara
+      Denniston</a>
+    <div><span id="currentdate"></span></div>
+  </footer>
+  <script src="js/scripts.js"></script>
+  <script src="js/fishhaven.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+  <script src="js/fonts.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>First Watch Weather | Image Gallery</title>
+  <meta name="description"
+    content="Image Gallery - user-submitted images of local weather phenomena in southeastern Idaho">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" href="css/small.css">
+  <link rel="stylesheet" href="css/medium.css">
+  <link rel="stylesheet" href="css/large.css">
+</head>
+
+<body>
+  <header>
+    <img src="images/fwwlogo100.png" alt="sun rising behind rolling hills">
+    <section class="headings">
+      <h1>First Watch Weather</h1>
+      <div>Southeastern Idaho's source for local weather</div>
+    </section>
+  </header>
+  <nav>
+    <ul class="navigation">
+      <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="preston.html">Preston</a></li>
+      <li><a href="#">Soda Springs</a></li>
+      <li><a href="#">Fish Haven</a></li>
+      <li><a href="stormcenter.html">Storm Center</a></li>
+      <li><a href="gallery.html" class="active">Gallery</a></li>
+    </ul>
+  </nav>
+  <main>
+    <h2>Weather Gallery</h2>
+    <div class="pic-grid">
+      <figure>
+        <img src="images/placeholder1.jpg" data-src="images/gallery1.jpg" alt="morning mist on field with cows">
+        <figcaption>Morning Mist</figcaption>
+      </figure>
+      <figure>
+        <img src="images/placeholder1.jpg" data-src="images/gallery2.jpg" alt="girl walking down leaf-strewn street">
+        <figcaption>Out for a Stroll in the Leaves</figcaption>
+      </figure>
+      <figure>
+        <img src="images/placeholder1.jpg" data-src="images/gallery3.jpg" alt="full rainbow">
+        <figcaption>No End to This Rainbow</figcaption>
+      </figure>
+      <figure>
+        <img src="images/placeholder2.jpg" data-src="images/gallery4.jpg"
+          alt="hot-air balloon against blue sky with wispy clouds">
+        <figcaption>A Beautiful Day for Flying</figcaption>
+      </figure>
+      <figure>
+        <img src="images/placeholder2.jpg" data-src="images/gallery5.jpg" alt="lightning strike at twilight">
+        <figcaption>Lightning Strike Near Fish Haven</figcaption>
+      </figure>
+      <figure>
+        <img src="images/placeholder2.jpg" data-src="images/gallery6.jpg" alt="frozen tree with icicles">
+        <figcaption>After the Ice Storm</figcaption>
+      </figure>
+      <figure>
+        <img src="images/placeholder3.jpg" data-src="images/gallery7.jpg" alt="unusual clouds">
+        <figcaption>Unusual Clouds over Preston</figcaption>
+      </figure>
+      <figure>
+        <img src="images/placeholder3.jpg" data-src="images/gallery8.jpg" alt="snow-covered landscape">
+        <figcaption>Blanketed in Snow</figcaption>
+      </figure>
+      <figure>
+        <img src="images/placeholder3.jpg" data-src="images/gallery9.jpg" alt="fluffy white clouds over a fallow field">
+        <figcaption>Fluffy Clouds over Soda Springs</figcaption>
+      </figure>
+    </div>
+    <div class="section4">
+      <a class="contact-img" target="_blank"
+        href="https://www.google.com/maps/place/1447+E+800+N,+Preston,+ID+83263/@42.1904493,-112.1708372,9.75z/data=!4m5!3m4!1s0x8754581a4f93ab7b:0x559de40a2abcaec2!8m2!3d42.1111605!4d-111.841079?hl=en">
+        <img src="images/map550.jpg" alt="map of southeastern Idaho" srcset="images/map400.jpg 400w,
+        images/map550.jpg 550w" sizes="40vw">
+      </a>
+      <div class="contact-box">
+        <div class="contact">
+          <address>
+            <strong>First Watch Weather</strong><br>1447 E 800 North<br>Preston, ID 83263<br><br>&#9742;
+            208.555.2653<br>&#9993; <a href="mailto:info@firstwatchweather.com">info@firstwatchweather.com</a>
+          </address>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    &copy; First Watch Weather | <a href="attributions.html">Attributions</a> | <a href="../index.html">Tara Denniston</a>
+    <div><span id="currentdate"></span></div>
+  </footer>
+  <script src="js/scripts.js"></script>
+  <script src="js/galleryimages.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+  <script src="js/fonts.js"></script>
+
+</body>
+
+</html>

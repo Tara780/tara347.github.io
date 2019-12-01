@@ -1,0 +1,77 @@
+@media only screen and (min-width: 58em) {
+  header img {
+    width: 100px;
+  }
+
+  h1 {
+    font-size: 3em;
+  }
+
+  .headings div {
+    font-size: 1.25em;
+  }
+
+  h2 {
+    font-size: 2em;
+  }
+
+  .navigation {
+    display: flex;
+  }
+
+  .navigation li:first-child {
+    display: none;
+  }
+
+  .navigation li {
+    display: block;
+    flex: 1 1 100%;
+  }
+
+  .section1,
+  .section2,
+  .section3 {
+    margin: 2rem 0;
+  }
+
+  .section1 {
+    padding: 0;
+  }
+
+  .weather-summary {
+    padding: 1.5rem;
+  }
+
+  .weather-summary h3 {
+    font-size: 1.5em;
+  }
+
+  .ws-content {
+    font-size: 1.25em;
+  }
+
+  .ws-content div {
+    line-height: 1.75rem;
+  }
+
+  .section2 h3 {
+    font-size: 1.55em;
+  }
+
+  .section3 {
+    padding: 3rem;
+  }
+
+  .article-img {
+    width: 400px;
+  }
+
+  address {
+    font-size: 1.2em;
+  }
+
+  address a {
+    font-size: 1em;
+  }
+
+}

@@ -1,0 +1,80 @@
+@media only screen and (min-width: 35em) {
+  body {
+    font-size: 16px;
+  }
+
+  header img {
+    width: 90px;
+    padding: 0.75rem;
+  }
+
+  h1 {
+    font-size: 2.75em;
+    margin-bottom: 0.1em;
+  }
+
+  .headings div {
+    font-size: 1.1em;
+  }
+
+  h2 {
+    font-size: 1.75em;
+  }
+
+  nav {
+    font-size: 1.3em;
+  }
+
+  .hero-image img {
+    width: 100%;
+    margin: 0;
+  }
+
+  .weather-summary {
+    padding: 1.25rem;
+  }
+
+  .weather-summary h3 {
+    font-size: 1.25em;
+  }
+
+  .ws-content {
+    font-size: 1em;
+  }
+
+  .ws-content div {
+    line-height: 1.5rem;
+  }
+
+  .section2 {
+    display: block;
+  }
+
+  .section3 {
+    padding: 2rem;
+  }
+
+  .article-img {
+    float: right;
+    margin: 0 0 0 1rem;
+    width: 45vw;
+  }
+
+  .article-title {
+    margin-top: 0;
+  }
+
+  .contact-img {
+    display: flex;
+  }
+
+  .contact-box {
+    width: 45%;
+  }
+
+  footer {
+    font-size: 1em;
+    max-width: 1080px;
+  }
+
+}

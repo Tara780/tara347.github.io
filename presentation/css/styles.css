@@ -1,0 +1,68 @@
+body {
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.75;
+  color: rgb(56, 55, 50);
+  min-height: 100vh; /* will cover the 100% of viewport */
+  position: relative;
+}
+  
+header, footer {
+  background-color: rgb(79, 63, 94);
+  color: #fff;
+  text-align: center;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  margin: auto;
+}
+
+#content-wrap {
+  padding-bottom: 3.5rem;
+  min-height: 93vh;
+  background-color: rgb(208, 206, 186);
+}
+  
+h1, h2, h3 {
+  margin: 0 auto;
+}
+
+h1 {
+  font-family: 'Ribeye', cursive;
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  padding: 4rem; 
+  margin: auto;
+  background-color: rgb(208, 206, 186);
+}
+
+#vid {
+  max-width: 100%;
+  max-height: 50vw;
+  display: grid;
+  margin: 0 auto;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 3.5rem;
+}
+
+#updated {
+  color: rgb(208, 206, 186);
+}
+  
+footer a {
+  color: white;
+}

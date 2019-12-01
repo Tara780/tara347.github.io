@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>First Watch Weather | Local Weather Conditions for Preston, Idaho</title>
+  <meta name="description"
+    content="Preston, Idaho weather - local weather conditions, 5-day forecast, and local happenings">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" href="css/small.css">
+  <link rel="stylesheet" href="css/medium.css">
+  <link rel="stylesheet" href="css/large.css">
+</head>
+
+<body onload="showBanner(); calculateWindChill()">
+  <aside class="showbanner hidebanner">Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park
+    pavilion.
+  </aside>
+  <header>
+    <img src="images/fwwlogo100.png" alt="sun rising behind rolling hills">
+    <section class="headings">
+      <h1>First Watch Weather</h1>
+      <div>Southeastern Idaho's source for local weather</div>
+    </section>
+  </header>
+  <nav>
+    <ul class="navigation">
+      <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+      <li><a href="#">Home</a></li>
+      <li><a href="preston.html" class="active">Preston</a></li>
+      <li><a href="#">Soda Springs</a></li>
+      <li><a href="#">Fish Haven</a></li>
+      <li><a href="stormcenter.html">Storm Center</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+    </ul>
+  </nav>
+  <main>
+    <h2>Preston Idaho</h2>
+    <div class="section1">
+      <div class="hero-image">
+        <img src="images/hero1080b.jpg" alt="boy playing in leaves" srcset="images/hero527.jpg 527w,
+                     images/hero895.jpg 895w,
+                     images/hero1080.jpg 1080w" sizes="100vw">
+      </div>
+      <section class="weather-summary">
+        <h3>Weather Summary</h3>
+        <div class="ws-content">
+          <div class="col1">Currently:</div>
+          <div>Rainy</div>
+          <div class="col1">High:</div>
+          <div><span id="currenttemp">48</span>&deg;F</div>
+          <div class="col1">Wind Chill:</div>
+          <div id=windchilllabel><span id="windchill"></span>&deg;F</div>
+          <div class="col1">Humidity:</div>
+          <div>95%</div>
+          <div class="col1">Wind Speed:</div>
+          <div><span id="windspeed">12</span>mph</div>
+        </div>
+      </section>
+    </div>
+    <div class="section2">
+      <h3>5 Day Forecast</h3>
+      <div class="forecast">
+        <div class="forecast-label">Sun</div>
+        <div class="forecast-label">Mon</div>
+        <div class="forecast-label">Tue</div>
+        <div class="forecast-label">Wed</div>
+        <div class="forecast-label">Thu</div>
+        <div class="forecast-image"><img src="images/partlycloudy.png" alt="weather condition icon"></div>
+        <div class="forecast-image"><img src="images/partlycloudy.png" alt="weather condition icon"></div>
+        <div class="forecast-image"><img src="images/snow.png" alt="weather condition icon"></div>
+        <div class="forecast-image"><img src="images/partlycloudy.png" alt="weather condition icon"></div>
+        <div class="forecast-image"><img src="images/partlycloudy.png" alt="weather condition icon"></div>
+        <div class="forecast-temp">37 &deg;F</div>
+        <div class="forecast-temp">37 &deg;F</div>
+        <div class="forecast-temp">26 &deg;F</div>
+        <div class="forecast-temp">29 &deg;F</div>
+        <div class="forecast-temp">34 &deg;F</div>
+      </div>
+    </div>
+    <div class="section3">
+      <img class="article-img" src="images/park.jpg" alt="people feeding pigeons by a lake">
+      <h3 class="article-title">Founders Day Fresco</h3>
+      <h4 class="author">by Janica Juarez</h4>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+        laborum.</p>
+    </div>
+    <div class="section4">
+      <a class="contact-img" target="_blank"
+        href="https://www.google.com/maps/place/1447+E+800+N,+Preston,+ID+83263/@42.1904493,-112.1708372,9.75z/data=!4m5!3m4!1s0x8754581a4f93ab7b:0x559de40a2abcaec2!8m2!3d42.1111605!4d-111.841079?hl=en">
+        <img src="images/map550.jpg" alt="map of southeastern Idaho" srcset="images/map400.jpg 400w,
+        images/map550.jpg 550w" sizes="40vw">
+      </a>
+      <div class="contact-box">
+        <div class="contact">
+          <address>
+            <strong>First Watch Weather</strong><br>1447 E 800 North<br>Preston, ID 83263<br><br>&#9742;
+            208.555.2653<br>&#9993; <a href="mailto:info@firstwatchweather.com">info@firstwatchweather.com</a>
+          </address>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    &copy; First Watch Weather | Attributions | <a href="../index.html">Tara Denniston</a>
+    <div><span id="currentdate"></span></div>
+  </footer>
+  <script src="js/scripts.js"></script>
+  <script src="js/prestonbanner.js"></script>
+  <script src="js/prestonwindchill.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+  <script src="js/fonts.js"></script>
+
+</body>
+
+</html>

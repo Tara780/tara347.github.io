@@ -1,0 +1,157 @@
+@media only screen and (min-width: 35em) {
+  body {
+    font-size: 16px;
+  }
+
+  /*** Header *****************************************/
+  header img {
+    width: 90px;
+    padding: 0.75rem;
+  }
+
+  h1 {
+    font-size: 2.75em;
+    margin-bottom: 0.1em;
+  }
+
+  .headings div {
+    font-size: 1.1em;
+  }
+
+  h2 {
+    font-size: 1.75em;
+  }
+
+  /*** Navigation *************************************/
+  nav {
+    font-size: 1.3em;
+  }
+
+  /*** Home Page: Feature *****************************/
+  div.feature {
+    padding: 2rem;
+  }
+
+  /*** Home Page: Local Towns *************************/
+  div.towns {
+    padding: 1rem;
+  }
+
+  div.town-data section {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  div.town-data section div.town-data {
+    grid-area: a;
+  } 
+
+  div.town-data section div.town-image {
+    grid-area: b;
+  } 
+
+  div.town-data section {
+    grid-template-areas: 
+      "a b";
+  } 
+
+  div.town-data section:nth-child(2n) {
+    grid-template-areas: 
+      "b a";
+  } 
+
+  div.town-data section div.town-info {
+    align-self: center;
+    margin: 0.5rem 1rem;
+  }
+
+  div.town-data section h3 {
+    font-size: 1.5rem;
+  }
+
+  div.town-data section p {
+    font-size: 0.9rem;
+  }
+
+  div.town-data section div.town-image img {
+    width: 100%; 
+    align-self: center;
+  }
+
+  /*** Location Pages: Hero Image / Weather Summary ***/
+  .hero-image img {
+    width: 100%;
+    margin: 0;
+  }
+
+  .weather-summary {
+    padding: 1.25rem;
+  }
+
+  .weather-summary h3 {
+    font-size: 1.25em;
+  }
+
+  .ws-content {
+    font-size: 1em;
+  }
+
+  .ws-content div {
+    line-height: 1.5rem;
+  }
+
+  /*** Location Pages: Forecast ************************/
+  .forecast-section {
+    display: block;
+  }
+
+  /*** Location Pages: Events *************************/
+  div.events-section {
+     padding: 2rem;
+   }
+
+  /*** Location Pages: Article ************************/
+  div.article {
+    padding: 2rem;
+  }
+
+  .article-img {
+    float: right;
+    margin: 0 0 0 1rem;
+    width: 45vw;
+  }
+
+  .article-title {
+    margin-top: 0;
+  }
+
+  /*** Gallery Page ***********************************/
+  .pic-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /*** Storm Center Page ******************************/
+  form legend {
+    font-size: 1.5rem;
+  }
+
+  form label.top input,
+  form label.top select {
+    width: 100%;
+  }
+
+  /*** Contact Info ***********************************/
+  .contact-img {
+    display: flex;
+  }
+
+  .contact-box {
+    width: 45%;
+  }
+
+  /*** Footer *****************************************/
+  footer {
+    font-size: 1em;
+    max-width: 1080px;
+  }
+
+}

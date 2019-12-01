@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>First Watch Weather | Local Weather Conditions for Preston, Idaho</title>
+  <meta name="description"
+    content="Preston, Idaho weather - local weather conditions, 5-day forecast, and local events">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" href="css/small.css">
+  <link rel="stylesheet" href="css/medium.css">
+  <link rel="stylesheet" href="css/large.css">
+</head>
+
+<body onload="showBanner()">
+  <aside class="showbanner hidebanner">Saturday = Preston Pancakes in the Park! 9:00 a.m. Saturday at the city park
+    pavilion.
+  </aside>
+  <header>
+    <img src="images/fwwlogo100.png" alt="sun rising behind rolling hills">
+    <section class="headings">
+      <h1>First Watch Weather</h1>
+      <div>Southeastern Idaho's source for local weather</div>
+    </section>
+  </header>
+  <nav>
+    <ul class="navigation">
+      <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="preston.html" class="active">Preston</a></li>
+      <li><a href="sodasprings.html">Soda Springs</a></li>
+      <li><a href="fishhaven.html">Fish Haven</a></li>
+      <li><a href="stormcenter.html">Storm Center</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+    </ul>
+  </nav>
+  <main>
+    <h2>Preston Idaho</h2>
+    <div class="town-feature">
+      <div class="hero-image">
+        <img src="images/phero1080.jpg" alt="boy playing in leaves" srcset="images/phero527.jpg 527w,
+                     images/phero895.jpg 895w,
+                     images/phero1080.jpg 1080w" sizes="100vw">
+      </div>
+      <section class="weather-summary">
+        <h3>Weather Summary</h3>
+        <div class="ws-content">
+          <div class="col1">Currently:</div>
+          <div id="currentcondition"></div>
+          <div class="col1">Temperature:</div>
+          <div><span id="currenttemp"></span>&deg;F</div>
+          <div class="col1">Wind Chill:</div>
+          <div id=windchilllabel><span id="windchill"></span>&deg;F</div>
+          <div class="col1">Humidity:</div>
+          <div><span id="humidity"></span>%</div>
+          <div class="col1">Wind Speed:</div>
+          <div><span id="windspeed">12</span>mph</div>
+        </div>
+      </section>
+    </div>
+    <div class="forecast-section">
+      <h3>5 Day Forecast</h3>
+      <div class="forecast">
+        <div class="forecast-label" id="label0"></div>
+        <div class="forecast-label" id="label1"></div>
+        <div class="forecast-label" id="label2"></div>
+        <div class="forecast-label" id="label3"></div>
+        <div class="forecast-label" id="label4"></div>
+        <div class="forecast-image"><img id="image0" src="#" alt="weather condition icon"></div>
+        <div class="forecast-image"><img id="image1" src="#" alt="weather condition icon"></div>
+        <div class="forecast-image"><img id="image2" src="#" alt="weather condition icon"></div>
+        <div class="forecast-image"><img id="image3" src="#" alt="weather condition icon"></div>
+        <div class="forecast-image"><img id="image4" src="#" alt="weather condition icon"></div>
+        <div class="forecast-temp"><span id="temp0"></span>&deg;F</div>
+        <div class="forecast-temp"><span id="temp1"></span>&deg;F</div>
+        <div class="forecast-temp"><span id="temp2"></span>&deg;F</div>
+        <div class="forecast-temp"><span id="temp3"></span>&deg;F</div>
+        <div class="forecast-temp"><span id="temp4"></span>&deg;F</div>
+      </div>
+    </div>
+    <div class="events-section">
+      <h3>Upcoming Events in Preston</h3>
+      <div class="events">
+      </div>
+    </div>
+    <div class="article">
+      <img class="article-img" src="images/park.jpg" alt="people feeding pigeons by a lake">
+      <h3 class="article-title">Celebrating Napoleon</h3>
+      <h4 class="author">by Tom Thompson</h4>
+      <p>Preston is a small town nestled in the beautiful Cache Valley. Residents are friendly, and there is a strong
+        sense of community. Each summer, the town hosts a festival celebrating the beloved characters from the movie
+        <i>Napoleon Dynamite</i>, which was filmed in Preston. The movie was released in 2004 and became an instant cult
+        classic. The Napoleon Dynamite festival is one of Preston's most popular events. Each year people come from far
+        and wide to join in the celebration. The festival features tetherball tournaments, a tater-tot-eating contest, a
+        costume contest, and a friendship bracelet station. Concessions and movie-related merchandise are available for
+        purchase. Drop by the park downtown from July 8-12 to join in the fun!</p>
+    </div>
+    <div class="contact-section">
+      <a class="contact-img" target="_blank"
+        href="https://www.google.com/maps/place/1447+E+800+N,+Preston,+ID+83263/@42.1904493,-112.1708372,9.75z/data=!4m5!3m4!1s0x8754581a4f93ab7b:0x559de40a2abcaec2!8m2!3d42.1111605!4d-111.841079?hl=en">
+        <img src="images/map550.jpg" alt="map of southeastern Idaho" srcset="images/map400.jpg 400w,
+        images/map550.jpg 550w" sizes="40vw">
+      </a>
+      <div class="contact-box">
+        <div class="contact">
+          <address>
+            <strong>First Watch Weather</strong><br>1447 E 800 North<br>Preston, ID 83263<br><br>&#9742;
+            208.555.2653<br>&#9993; <a href="mailto:info@firstwatchweather.com">info@firstwatchweather.com</a>
+          </address>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    &copy; First Watch Weather | <a href="attributions.html">Attributions</a> | <a href="../index.html">Tara
+      Denniston</a>
+    <div><span id="currentdate"></span></div>
+  </footer>
+  <script src="js/scripts.js"></script>
+  <script src="js/prestonbanner.js"></script>
+  <script src="js/preston.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+  <script src="js/fonts.js"></script>
+
+</body>
+
+</html>
