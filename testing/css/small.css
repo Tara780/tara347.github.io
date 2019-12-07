@@ -6,27 +6,49 @@ body {
 
 header,
 footer {
-  background-color: #4d7298;
-  color: #fff;
-  text-align: center;
+  background-color: #EDE0D0;
+  /* text-align: center; */
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   margin: auto;
   max-width: 1080px;
 }
 
+.fancy {
+  font-family: 'Alex Brush', cursive;
+  font-size: 4rem;
+  font-weight: 400;
+}
+
+.second {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+}
+
+.third {
+  font-family: 'Maven Pro', sans-serif;
+  font-weight: 500;
+}
+
+.fourth {
+  font-family: 'Julius Sans One', sans-serif;
+}
+
 header img {
   float: left;
-  width: 150px;
+  width: 100px;
+  padding: 0 1rem;
 }
 
 h1,
 h2 {
-  margin: 0 auto;
+  margin: 0 auto; 
 }
 
 h1 {
-  font-family: 'Marcellus SC', serif;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+/*  font-style: italic; */
   font-size: 3em;
 }
 

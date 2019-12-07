@@ -1,0 +1,57 @@
+/*****************************************************
+/                 Temple Inn & Suites
+/                   - Small View -
+/*****************************************************/
+
+/* Global Styles -------------------------------*/
+
+body {
+  background-color: $backgroundColor;
+  color: $textColor;
+  font-size: 12px;
+  font-family: $bodyFont;
+}
+
+h2, h3, h4, h5, h6 {
+  font-family: $headerFont;
+}
+
+/* Header --------------------------------------*/
+
+header {
+  background-color: $mainColorLight;
+
+  a {
+    text-decoration: none;
+    color: $textColor;
+
+    div.logo-box {
+      font-family: $logoFont;
+      font-size: 0.75rem;
+      display: flex;
+      align-items: flex-end;
+
+      img {
+        height: 45px;
+        padding: 0.5rem 0.25rem 0.5rem 0.75rem;
+      }
+
+      h1 {
+        margin: 0;
+        padding-bottom: 0.25rem;
+        font-weight: normal;
+
+        span.fancy {
+          font-family: $fancyFont;
+          font-size: 1.75rem;
+        }
+      }
+    }
+  }
+}
+
+/* Footer --------------------------------------*/
+
+footer {
+  background-color: $mainColorLight;
+}
