@@ -137,6 +137,14 @@ main {
   }
 
   div {
+
+    img.home-banner {
+      max-height: 30rem;
+      margin-left: 50%;
+      transform: translateX(-50%);
+      overflow: hidden;
+    }
+
     div.call-to-action {
       display: block;
       background-color: $accentColor;
@@ -153,7 +161,7 @@ main {
         color: $textColor;
         text-decoration: none;
         font-weight: bold;
-        font-size: 1.5rem;
+        font-size: 1.25rem;
       }
     }
   }

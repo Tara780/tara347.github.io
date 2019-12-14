@@ -40,3 +40,19 @@ header {
     top: 85px;
   }
 }
+
+/* Main ----------------------------------------*/
+main {
+
+  div {
+    
+    img.home-banner {
+      max-height: 34rem;
+      left: -5rem;
+    }
+
+    div.call-to-action a {
+      font-size: 1.5rem;
+    }
+  }
+}
