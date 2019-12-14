@@ -402,27 +402,30 @@ header {
 /* Main ----------------------------------------*/
 main h2 {
   font-size: 3.5em; }
-main div img.home-banner {
-  max-height: 30rem;
-  margin-left: 50%;
-  transform: translateX(-50%);
+main div {
+  max-width: 100vw;
   overflow: hidden; }
-main div div.call-to-action {
-  display: block;
-  background-color: #D88C8C;
-  position: relative;
-  bottom: 150px;
-  margin: 0 auto;
-  padding: 1.5rem 2rem;
-  width: max-content;
-  border: 2px solid rgba(0, 0, 0, 0.3);
-  border-radius: 20px;
-  box-shadow: 0 0 20px rgba(255, 255, 255, 0.7), 0 0 40px rgba(255, 255, 255, 0.7); }
-  main div div.call-to-action a {
-    color: black;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1.25rem; }
+  main div img.home-banner {
+    max-height: 30rem;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    overflow: hidden; }
+  main div div.call-to-action {
+    display: block;
+    background-color: #D88C8C;
+    position: relative;
+    bottom: 150px;
+    margin: 0 auto;
+    padding: 1.5rem 2rem;
+    width: max-content;
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.7), 0 0 40px rgba(255, 255, 255, 0.7); }
+    main div div.call-to-action a {
+      color: black;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.25rem; }
 
 /* Footer --------------------------------------*/
 footer {
@@ -435,11 +438,21 @@ footer {
     justify-content: space-around;
     margin: 0 auto;
     font-style: normal; }
-    footer address div {
-      padding: 1.5rem; }
+    footer address div.footer-address {
+      padding: 1.5rem  1.5rem  1.5rem  1.5rem; }
+      footer address div.footer-address a {
+        text-decoration: none;
+        color: black; }
+    footer address div.footer-contact {
+      padding: 0rem  1.5rem  1.5rem  1.5rem; }
+      footer address div.footer-contact a {
+        text-decoration: none;
+        color: black; }
   footer div.footer-copy {
     margin: 0 auto;
     padding: 1rem; }
+    footer div.footer-copy a {
+      color: black; }
 
 @media only screen and (min-width: 590px) {
   /*****************************************************
@@ -476,8 +489,10 @@ footer {
   /* Footer --------------------------------------*/
   footer address {
     flex-direction: row; }
-    footer address div {
-      padding: 2rem; } }
+    footer address div.footer-address {
+      padding: 2rem 2rem 1.5rem 2rem; }
+    footer address div.footer-contact {
+      padding: 2rem 2rem 1.5rem 2rem; } }
 @media only screen and (min-width: 1190px) {
   /*****************************************************
   /                 Temple Inn & Suites

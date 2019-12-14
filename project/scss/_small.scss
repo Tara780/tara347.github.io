@@ -137,6 +137,8 @@ main {
   }
 
   div {
+    max-width: 100vw;
+    overflow: hidden;
 
     img.home-banner {
       max-height: 30rem;
@@ -181,13 +183,31 @@ footer {
     margin: 0 auto;
     font-style: normal;
 
-    div {
-      padding: 1.5rem; 
+    div.footer-address {
+      padding:  1.5rem  1.5rem  1.5rem  1.5rem;
+
+      a {
+        text-decoration: none;
+        color: $textColor;
+      }
+    }
+
+    div.footer-contact {
+      padding: 0rem  1.5rem  1.5rem  1.5rem;
+
+      a {
+        text-decoration: none;
+        color: $textColor;
+      }
     }
   }
 
   div.footer-copy {
     margin: 0 auto;
     padding: 1rem;
+
+    a {
+      color: $textColor;
+    }
   }
 }

@@ -62,7 +62,11 @@ main {
 footer address {
   flex-direction: row;
 
-  div {
-    padding: 2rem; 
+  div.footer-address {
+    padding: 2rem 2rem 1.5rem 2rem;
+  }
+
+  div.footer-contact {
+    padding: 2rem 2rem 1.5rem 2rem;
   }
 }
