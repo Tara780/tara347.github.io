@@ -171,4 +171,23 @@ main {
 
 footer {
   background-color: $mainColorLight;
+  display: flex;
+  flex-direction: column;
+
+  address {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0 auto;
+    font-style: normal;
+
+    div {
+      padding: 1.5rem; 
+    }
+  }
+
+  div.footer-copy {
+    margin: 0 auto;
+    padding: 1rem;
+  }
 }

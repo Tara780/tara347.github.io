@@ -426,7 +426,20 @@ main div div.call-to-action {
 
 /* Footer --------------------------------------*/
 footer {
-  background-color: #EDE0D0; }
+  background-color: #EDE0D0;
+  display: flex;
+  flex-direction: column; }
+  footer address {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0 auto;
+    font-style: normal; }
+    footer address div {
+      padding: 1.5rem; }
+  footer div.footer-copy {
+    margin: 0 auto;
+    padding: 1rem; }
 
 @media only screen and (min-width: 590px) {
   /*****************************************************
@@ -458,7 +471,13 @@ footer {
     max-height: 34rem;
     left: -5rem; }
   main div div.call-to-action a {
-    font-size: 1.5rem; } }
+    font-size: 1.5rem; }
+
+  /* Footer --------------------------------------*/
+  footer address {
+    flex-direction: row; }
+    footer address div {
+      padding: 2rem; } }
 @media only screen and (min-width: 1190px) {
   /*****************************************************
   /                 Temple Inn & Suites
@@ -525,6 +544,6 @@ footer {
 
   /* Main ----------------------------------------*/
   main div img.home-banner {
-    width: 100%;
+    max-width: 100%;
     left: 0;
     max-height: none; } }

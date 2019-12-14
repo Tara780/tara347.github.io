@@ -56,3 +56,13 @@ main {
     }
   }
 }
+
+/* Footer --------------------------------------*/
+
+footer address {
+  flex-direction: row;
+
+  div {
+    padding: 2rem; 
+  }
+}
