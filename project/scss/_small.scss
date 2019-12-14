@@ -83,11 +83,6 @@ header {
         img.active-decoration {
           display: none;
         }
-
-      }
-      
-      li:hover {
-        background-color: $mainColorDark;
       }
 
       li:nth-child(5) {
@@ -95,47 +90,44 @@ header {
         font-size: 1.75rem;
         padding-right: 0.5rem;
       }
-
-      li.responsive {
-        display: flex;
-      }
     }
   }
 
-  /*.navigation {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-  } */
-
-
-
-  /*.navigation li {
+  div.drop-down {
     display: none;
-  } */
+  }
 
-  /*.navigation a {
+  div.responsive {
     display: block;
-    color: black;
-    text-align: center;
-    padding: 0.75rem;
-    text-decoration: none;
-  } */
+    position: absolute;
+    top: 60px;
+    right: 0;
+    z-index: 1;
+    background-color: $mainColorLight;
 
-  /*.navigation a:hover {
-    background-color: #9dc3c2;
-  } */
+    a {
+      display: block;
+      color: $textColor;
+      text-align: left;
+      font-size: 1.5rem;
+      padding: 1rem 2rem;
+      text-decoration: none;
+    }
 
-  /*.navigation .active {
-    color: #fff;
-    text-shadow: 0 0 2px rgb(31, 45, 58), 0 0 10px rgb(31, 45, 58);
-  } */
+    a.indent {
+      padding-left: 4rem;
+      font-size: 1.25rem;
+    }
 
-  /*.responsive li {
-    display: block;
-  }*/
+    a:hover {
+      background-color: $mainColorDark;
+    }
 
+    a.active {
+      text-decoration: underline overline $accentColor;
+    }
+
+  }
 }
 
 /* Main ----------------------------------------*/
@@ -146,13 +138,22 @@ main {
 
   div {
     div.call-to-action {
-      display: flex;
-      align-self: center;
+      display: block;
+      background-color: $accentColor;
+      position: relative;
+      bottom: 150px;
+      margin: 0 auto;
+      padding: 1.5rem 2rem;
+      width: max-content;
+      border: 2px solid rgba(0, 0, 0, 0.3);
+      border-radius: 20px;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.7), 0 0 40px rgba(255, 255, 255, 0.7);
 
-      button {
-        background-color: $accentColor;
-        padding: 0.25rem;
-        margin: 1rem 1rem 0.5rem 0.5rem;
+      a {
+        color: $textColor;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 1.5rem;
       }
     }
   }

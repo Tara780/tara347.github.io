@@ -1,7 +1,7 @@
 // Toggle the hamburger menu class name upon click
 function toggleMenu() {
   document
-    .getElementsByClassName("navigation")[4]
+    .getElementsByClassName("drop-down")[0]
     .classList.toggle("responsive");
 }
 
