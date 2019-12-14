@@ -27,7 +27,7 @@ header {
       font-size: 3rem;
       line-height: 2.5rem;
       padding-right: 1rem;
-      /*padding-top: 1.5rem;*/
+      padding-top: 1rem;
     }
 
     h1 span.fancy {
@@ -36,17 +36,28 @@ header {
   }
 
   nav {
+    margin-right: 1rem;
 
     ul.navigation {
       /*padding-top: 1.5rem;*/
       
       li {
-        display: flex;
-        flex-direction: column;
-
+        display: grid;
+        grid-template-rows: 0.75fr 1fr 0.75fr; 
+        
         img.active-decoration {
-          display: flex;
-          align-self: center;
+          display: grid;
+          width: 7rem;
+        }
+
+        div.top-decoration {
+          justify-self: center;
+          align-self: end;
+        }
+
+        div.bottom-decoration {
+          justify-self: center;
+          align-self: top;
         }
       }
 

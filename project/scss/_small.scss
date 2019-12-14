@@ -26,7 +26,6 @@ h6 {
 header {
   background-color: $mainColorLight;
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
 
   a {
@@ -63,14 +62,16 @@ header {
   nav {
     display: flex;
     font-size: 1.5em;
+    margin-right: 0rem;
 
     ul.navigation {
       display: flex;
       list-style-type: none;
-      padding: 0.5rem 0;
+      padding-left: 0;
       margin: 0;
 
       li {
+        display: flex;
         text-align: center;
         display: none;
 
@@ -79,14 +80,14 @@ header {
           padding: 0.25rem 1rem;
         }
 
-        /* a.active {
-          background-color: $accentColor;
-        } */
-
         img.active-decoration {
           display: none;
         }
 
+      }
+      
+      li:hover {
+        background-color: $mainColorDark;
       }
 
       li:nth-child(5) {
