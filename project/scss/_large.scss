@@ -19,8 +19,15 @@ header {
     font-size: 1.5rem;
 
     img {
-      height: 90px;
+      height: 80px;
       padding-left: 2rem;
+    }
+
+    h1 {
+      font-size: 3rem;
+      line-height: 2.5rem;
+      padding-right: 1rem;
+      /*padding-top: 1.5rem;*/
     }
 
     h1 span.fancy {
@@ -29,11 +36,28 @@ header {
   }
 
   nav {
-    display: flex;
-    flex-direction: column-reverse;
-    div.call-to-action {
-      align-self: flex-end;
+
+    ul.navigation {
+      /*padding-top: 1.5rem;*/
+      
+      li {
+        display: flex;
+        flex-direction: column;
+
+        img.active-decoration {
+          display: flex;
+          align-self: center;
+        }
+      }
+
+      li:nth-child(5) {
+        display: none;
+      }
     }
   }
+
+  /*main div.call-to-action {
+    align-self: flex-end;
+  }*/
 
 }

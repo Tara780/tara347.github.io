@@ -332,7 +332,8 @@ h6 {
 header {
   background-color: #EDE0D0;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-between;
   /* Navigation --------------------------------*/
   /*.navigation {
     list-style-type: none;
@@ -364,61 +365,63 @@ header {
     text-decoration: none;
     color: black; }
     header a div.logo-box {
-      font-family: "Julius Sans One", sans-serif;
-      font-size: 0.75rem;
       display: flex;
-      align-items: flex-end; }
+      align-items: center; }
       header a div.logo-box img {
         height: 45px;
         padding: 0.5rem 0.25rem 0.5rem 0.75rem; }
       header a div.logo-box h1 {
+        font-family: "Julius Sans One", sans-serif;
+        font-size: 1.5rem;
         margin: 0;
-        padding-bottom: 0.25rem;
+        padding-top: 0.5rem;
+        line-height: 1.25rem;
         font-weight: normal; }
         header a div.logo-box h1 span.fancy {
           font-family: "Alex Brush", cursive;
           font-size: 1.75rem; }
   header nav {
     display: flex;
-    flex-direction: column;
-    /*  margin: auto; */
-    /*font-weight: bold; */
-    /*flex-direction: column;*/
-    /*align-items: flex-end;*/
-    font-size: 1.75em; }
-    header nav div.call-to-action {
+    font-size: 1.5em; }
+    header nav ul.navigation {
       display: flex;
-      align-self: center; }
-      header nav div.call-to-action button {
-        background-color: #D88C8C;
-        padding: 0.25rem;
-        margin: 1rem 1rem 0.5rem 0.5rem; }
-    header nav div.navigation {
-      /*display: flex;
-      flex-direction: row; */ }
-      header nav div.navigation ul {
-        display: flex;
-        list-style-type: none;
-        padding: 0.5rem 0;
-        margin: 0; }
-        header nav div.navigation ul li {
-          text-align: center; }
-          header nav div.navigation ul li a {
-            padding: 0.25rem 1rem; }
-          header nav div.navigation ul li a.active {
-            background-color: #D88C8C; }
-        header nav div.navigation ul li:nth-child(5) {
+      list-style-type: none;
+      padding: 0.5rem 0;
+      margin: 0; }
+      header nav ul.navigation li {
+        text-align: center;
+        display: none;
+        /* a.active {
+          background-color: $accentColor;
+        } */ }
+        header nav ul.navigation li a {
+          align-self: center;
+          padding: 0.25rem 1rem; }
+        header nav ul.navigation li img.active-decoration {
           display: none; }
+      header nav ul.navigation li:nth-child(5) {
+        display: flex;
+        font-size: 1.75rem;
+        padding-right: 0.5rem; }
+      header nav ul.navigation li.responsive {
+        display: flex; }
 
 /* Main ----------------------------------------*/
-h2 {
+main h2 {
   font-size: 3.5em; }
+main div div.call-to-action {
+  display: flex;
+  align-self: center; }
+  main div div.call-to-action button {
+    background-color: #D88C8C;
+    padding: 0.25rem;
+    margin: 1rem 1rem 0.5rem 0.5rem; }
 
 /* Footer --------------------------------------*/
 footer {
   background-color: #EDE0D0; }
 
-@media only screen and (min-width: 560px) {
+@media only screen and (min-width: 577px) {
   /*****************************************************
   /                 Temple Inn & Suites
   /                   - Medium View -
@@ -428,14 +431,15 @@ footer {
     font-size: 14px; }
 
   /* Header --------------------------------------*/
-  header a div.logo-box {
-    font-size: 1.25rem; }
-    header a div.logo-box img {
-      height: 75px;
-      padding-left: 1.5rem; }
-    header a div.logo-box h1 span.fancy {
-      font-size: 3.0rem; } }
-@media only screen and (min-width: 1100px) {
+  header a div.logo-box img {
+    height: 70px;
+    padding-left: 1.5rem; }
+  header a div.logo-box h1 {
+    font-size: 2.5rem;
+    line-height: 2rem; }
+  header a div.logo-box h1 span.fancy {
+    font-size: 3rem; } }
+@media only screen and (min-width: 1175px) {
   /*****************************************************
   /                 Temple Inn & Suites
   /                   - Large View -
@@ -447,16 +451,29 @@ footer {
   /* Header --------------------------------------*/
   header {
     flex-direction: row;
-    justify-content: space-between; }
+    justify-content: space-between;
+    /*main div.call-to-action {
+      align-self: flex-end;
+    }*/ }
     header a div.logo-box {
       font-size: 1.5rem; }
       header a div.logo-box img {
-        height: 90px;
+        height: 80px;
         padding-left: 2rem; }
+      header a div.logo-box h1 {
+        font-size: 3rem;
+        line-height: 2.5rem;
+        padding-right: 1rem;
+        /*padding-top: 1.5rem;*/ }
       header a div.logo-box h1 span.fancy {
         font-size: 3.5rem; }
-    header nav {
-      display: flex;
-      flex-direction: column-reverse; }
-      header nav div.call-to-action {
-        align-self: flex-end; } }
+    header nav ul.navigation {
+      /*padding-top: 1.5rem;*/ }
+      header nav ul.navigation li {
+        display: flex;
+        flex-direction: column; }
+        header nav ul.navigation li img.active-decoration {
+          display: flex;
+          align-self: center; }
+      header nav ul.navigation li:nth-child(5) {
+        display: none; } }

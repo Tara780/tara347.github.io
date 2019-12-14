@@ -26,17 +26,16 @@ h6 {
 header {
   background-color: $mainColorLight;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-between;
 
   a {
     text-decoration: none;
     color: $textColor;
 
     div.logo-box {
-      font-family: $logoFont;
-      font-size: 0.75rem;
       display: flex;
-      align-items: flex-end;
+      align-items: center;
 
       img {
         height: 45px;
@@ -44,8 +43,11 @@ header {
       }
 
       h1 {
+        font-family: $logoFont;
+        font-size: 1.5rem;
         margin: 0;
-        padding-bottom: 0.25rem;
+        padding-top: 0.5rem;
+        line-height: 1.25rem;
         font-weight: normal;
 
         span.fancy {
@@ -60,51 +62,41 @@ header {
 
   nav {
     display: flex;
-    flex-direction: column;
+    font-size: 1.5em;
 
-    /*  margin: auto; */
-    /*font-weight: bold; */
-    /*flex-direction: column;*/
-    /*align-items: flex-end;*/
-
-    font-size: 1.75em;
-
-    div.call-to-action {
+    ul.navigation {
       display: flex;
-      align-self: center;
+      list-style-type: none;
+      padding: 0.5rem 0;
+      margin: 0;
 
-      button {
-        background-color: $accentColor;
-        padding: 0.25rem;
-        margin: 1rem 1rem 0.5rem 0.5rem;
-      }
-    }
+      li {
+        text-align: center;
+        display: none;
 
-    div.navigation {
-
-      /*display: flex;
-      flex-direction: row; */
-      ul {
-        display: flex;
-        list-style-type: none;
-        padding: 0.5rem 0;
-        margin: 0;
-
-        li {
-          text-align: center;
-
-          a {
-            padding: 0.25rem 1rem;
-          }
-
-          a.active {
-            background-color: $accentColor;
-          }          
+        a {
+          align-self: center;
+          padding: 0.25rem 1rem;
         }
 
-        li:nth-child(5) {
+        /* a.active {
+          background-color: $accentColor;
+        } */
+
+        img.active-decoration {
           display: none;
         }
+
+      }
+
+      li:nth-child(5) {
+        display: flex;
+        font-size: 1.75rem;
+        padding-right: 0.5rem;
+      }
+
+      li.responsive {
+        display: flex;
       }
     }
   }
@@ -146,9 +138,23 @@ header {
 }
 
 /* Main ----------------------------------------*/
+main {
+  h2 {
+    font-size: 3.5em;
+  }
 
-h2 {
-  font-size: 3.5em;
+  div {
+    div.call-to-action {
+      display: flex;
+      align-self: center;
+
+      button {
+        background-color: $accentColor;
+        padding: 0.25rem;
+        margin: 1rem 1rem 0.5rem 0.5rem;
+      }
+    }
+  }
 }
 
 /* Footer --------------------------------------*/
