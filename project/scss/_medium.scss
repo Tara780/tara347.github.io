@@ -41,10 +41,14 @@ header {
   }
 }
 
-/* Main ----------------------------------------*/
+/* Home Main -----------------------------------*/
+
 main {
 
-  div {
+  /* Home Main: Hero/Banner Image --------------*/
+
+  div.hero {
+    max-height: 34rem;
     
     img.home-banner {
       max-height: 34rem;
@@ -55,18 +59,34 @@ main {
       font-size: 1.5rem;
     }
   }
+
+  /* Home Main: Page Tiles ---------------------*/
+
+  div.page-tiles {
+    flex-direction: row;
+
+    a.page-tile {
+      width: 48%;
+
+      /*img {
+        width: 100%;
+      }*/
+    }
+  }
 }
 
 /* Footer --------------------------------------*/
 
 footer address {
   flex-direction: row;
+  justify-content: space-around;
+  margin: 0;
 
   div.footer-address {
-    padding: 2rem 2rem 1.5rem 2rem;
+    padding: 2rem 2rem 0.5rem 2rem;
   }
 
   div.footer-contact {
-    padding: 2rem 2rem 1.5rem 2rem;
+    padding: 2rem 2rem 0.5rem 2rem;
   }
 }

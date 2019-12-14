@@ -105,15 +105,26 @@ header {
   }
 }
 
-/* Main ----------------------------------------*/
+/* Home Main -----------------------------------*/
+
 main {
 
-  div {
-    
+  /* Home Main: Hero/Banner Image --------------*/
+
+  div.hero {
+    max-height: none;
+    margin-bottom: -5rem;
+
     img.home-banner {
       max-width: 100%;
       left: 0;
-      max-height: none;
+      max-height: 50rem;
     }
+  }
+
+  /* Home Main: Page Tiles ---------------------*/
+
+  div.page-tiles {
+    max-width: 1200px;
   }
 }

@@ -399,33 +399,58 @@ header {
     header div.responsive a.active {
       text-decoration: underline overline #D88C8C; }
 
-/* Main ----------------------------------------*/
-main h2 {
-  font-size: 3.5em; }
-main div {
-  max-width: 100vw;
-  overflow: hidden; }
-  main div img.home-banner {
+/* Home Main -----------------------------------*/
+main {
+  /* Home Main: Hero/Banner Image --------------*/
+  /* Home Main: Page Tiles ---------------------*/ }
+  main h2 {
+    font-size: 3.5em; }
+  main div.hero {
+    max-width: 100vw;
     max-height: 30rem;
-    margin-left: 50%;
-    transform: translateX(-50%);
     overflow: hidden; }
-  main div div.call-to-action {
-    display: block;
-    background-color: #D88C8C;
-    position: relative;
-    bottom: 150px;
-    margin: 0 auto;
-    padding: 1.5rem 2rem;
-    width: max-content;
-    border: 2px solid rgba(0, 0, 0, 0.3);
-    border-radius: 20px;
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.7), 0 0 40px rgba(255, 255, 255, 0.7); }
-    main div div.call-to-action a {
-      color: black;
-      text-decoration: none;
-      font-weight: bold;
-      font-size: 1.25rem; }
+    main div.hero img.home-banner {
+      max-height: 30rem;
+      margin-left: 50%;
+      transform: translateX(-50%);
+      overflow: hidden; }
+    main div.hero div.call-to-action {
+      display: block;
+      background-color: #D88C8C;
+      position: relative;
+      bottom: 150px;
+      margin: 0 auto;
+      padding: 1.5rem 2rem;
+      width: max-content;
+      border: 2px solid rgba(0, 0, 0, 0.3);
+      border-radius: 20px;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.7), 0 0 40px rgba(255, 255, 255, 0.7); }
+      main div.hero div.call-to-action a {
+        color: black;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 1.25rem; }
+  main div.page-tiles {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    margin: 0 auto; }
+    main div.page-tiles a.page-tile {
+      background-color: #EDE0D0;
+      margin: 1rem;
+      /*div.tile-label {
+        background-color: $mainColorDark;
+        position: relative;
+        z-index: 1;
+        bottom: 15vw;
+        margin: 0 auto;
+        padding: 0.5rem;
+        width: 100%;
+        text-align: center;
+        font-size: 1.25rem;
+      } */ }
+      main div.page-tiles a.page-tile img {
+        width: 100%; }
 
 /* Footer --------------------------------------*/
 footer {
@@ -435,22 +460,22 @@ footer {
   footer address {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     margin: 0 auto;
     font-style: normal; }
     footer address div.footer-address {
-      padding: 1.5rem  1.5rem  1.5rem  1.5rem; }
+      padding: 1.5rem 1.5rem 0.5rem 1.5rem; }
       footer address div.footer-address a {
         text-decoration: none;
         color: black; }
     footer address div.footer-contact {
-      padding: 0rem  1.5rem  1.5rem  1.5rem; }
+      padding: 0rem 1.5rem 0 1.5rem; }
       footer address div.footer-contact a {
         text-decoration: none;
         color: black; }
   footer div.footer-copy {
     margin: 0 auto;
-    padding: 1rem; }
+    padding: 1.5rem;
+    text-align: center; }
     footer div.footer-copy a {
       color: black; }
 
@@ -479,20 +504,34 @@ footer {
     header div.responsive {
       top: 85px; }
 
-  /* Main ----------------------------------------*/
-  main div img.home-banner {
-    max-height: 34rem;
-    left: -5rem; }
-  main div div.call-to-action a {
-    font-size: 1.5rem; }
+  /* Home Main -----------------------------------*/
+  main {
+    /* Home Main: Hero/Banner Image --------------*/
+    /* Home Main: Page Tiles ---------------------*/ }
+    main div.hero {
+      max-height: 34rem; }
+      main div.hero img.home-banner {
+        max-height: 34rem;
+        left: -5rem; }
+      main div.hero div.call-to-action a {
+        font-size: 1.5rem; }
+    main div.page-tiles {
+      flex-direction: row; }
+      main div.page-tiles a.page-tile {
+        width: 48%;
+        /*img {
+          width: 100%;
+        }*/ }
 
   /* Footer --------------------------------------*/
   footer address {
-    flex-direction: row; }
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0; }
     footer address div.footer-address {
-      padding: 2rem 2rem 1.5rem 2rem; }
+      padding: 2rem 2rem 0.5rem 2rem; }
     footer address div.footer-contact {
-      padding: 2rem 2rem 1.5rem 2rem; } }
+      padding: 2rem 2rem 0.5rem 2rem; } }
 @media only screen and (min-width: 1190px) {
   /*****************************************************
   /                 Temple Inn & Suites
@@ -557,8 +596,16 @@ footer {
     header div.responsive {
       display: none; }
 
-  /* Main ----------------------------------------*/
-  main div img.home-banner {
-    max-width: 100%;
-    left: 0;
-    max-height: none; } }
+  /* Home Main -----------------------------------*/
+  main {
+    /* Home Main: Hero/Banner Image --------------*/
+    /* Home Main: Page Tiles ---------------------*/ }
+    main div.hero {
+      max-height: none;
+      margin-bottom: -5rem; }
+      main div.hero img.home-banner {
+        max-width: 100%;
+        left: 0;
+        max-height: 50rem; }
+    main div.page-tiles {
+      max-width: 1200px; } }
