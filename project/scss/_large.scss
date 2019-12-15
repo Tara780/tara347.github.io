@@ -105,13 +105,13 @@ header {
   }
 }
 
-/* Home Main -----------------------------------*/
+/* Main ----------------------------------------*/
 
 main {
 
-  /* Home Main: Hero/Banner Image --------------*/
+  /* Home: Hero/Banner Image -------------------*/
 
-  div.hero {
+  section.hero {
     max-height: none;
     margin-bottom: -5rem;
 
@@ -122,9 +122,13 @@ main {
     }
   }
 
-  /* Home Main: Page Tiles ---------------------*/
+  /* Home: Page Tiles --------------------------*/
 
-  div.page-tiles {
+  section.page-tiles {
+    max-width: 1200px;
+  }
+
+  section.temple-feature {
     max-width: 1200px;
   }
 }

@@ -41,13 +41,13 @@ header {
   }
 }
 
-/* Home Main -----------------------------------*/
+/* Main ----------------------------------------*/
 
 main {
 
-  /* Home Main: Hero/Banner Image --------------*/
+  /* Home: Hero/Banner Image -------------------*/
 
-  div.hero {
+  section.hero {
     max-height: 34rem;
     
     img.home-banner {
@@ -60,17 +60,24 @@ main {
     }
   }
 
-  /* Home Main: Page Tiles ---------------------*/
+  /* Home: Page Tiles --------------------------*/
 
-  div.page-tiles {
+  section.page-tiles {
     flex-direction: row;
 
     a.page-tile {
-      width: 48%;
+    }
+  }
 
-      /*img {
-        width: 100%;
-      }*/
+  /* Home: Temple Feature ----------------------*/
+
+  section.temple-feature {
+
+    div.temple-overlay {
+      position: absolute;
+      top: 3rem;
+      left: 4rem;
+      padding: 2rem;
     }
   }
 }
