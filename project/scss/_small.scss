@@ -170,6 +170,10 @@ main {
         font-size: 1.25rem;
       }
     }
+
+    div.call-to-action:hover {
+      background-color: $accentHover;
+    }
   }
 
   /* Home: Page Tiles --------------------------*/
@@ -187,6 +191,10 @@ main {
       img {
         width: 100%;
       }
+    }
+
+    a.page-tile:hover {
+      opacity: 0.7;
     }
   }
 
