@@ -313,7 +313,9 @@ template {
 /                 Temple Inn & Suites
 /                   - Small View -
 /*****************************************************/
+/************************************************/
 /* Global Styles -------------------------------*/
+/************************************************/
 body {
   background-color: #FBFBF2;
   color: black;
@@ -328,7 +330,15 @@ h6 {
   font-family: "Sacramento", cursive;
   color: #CE6F6F; }
 
+.center {
+  text-align: center; }
+
+h2 {
+  margin-bottom: 1rem; }
+
+/************************************************/
 /* Header --------------------------------------*/
+/************************************************/
 header {
   background-color: #EDE0D0;
   display: flex;
@@ -399,11 +409,17 @@ header {
     header div.responsive a.active {
       text-decoration: underline overline #D88C8C; }
 
+/************************************************/
 /* Main ----------------------------------------*/
+/************************************************/
 main {
   /* Home: Hero/Banner Image -------------------*/
   /* Home: Page Tiles --------------------------*/
-  /* Home: Temple Feature ----------------------*/ }
+  /* Home: Temple Feature ----------------------*/
+  /**********************************************/
+  /* Reservations Page -------------------------*/
+  /**********************************************/
+  /* Reservations Page: Form Settings ----------*/ }
   main h2 {
     font-size: 3.5em; }
   main section.hero {
@@ -460,9 +476,7 @@ main {
       margin: 1rem;
       padding: 0;
       background-color: rgba(251, 251, 242, 0.7);
-      border-radius: 20px;
-      /* top: 5rem;
-      left: 50%;*/ }
+      border-radius: 20px; }
       main section.temple-feature div.temple-overlay h2 {
         text-align: center;
         margin: 0.5rem; }
@@ -478,8 +492,80 @@ main {
           font-weight: bold;
           font-size: 1.25rem;
           padding-bottom: 0.5rem; }
+  main .red {
+    color: #990000; }
+  main section.resform {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden; }
+    main section.resform div.bg-image {
+      z-index: 0;
+      margin: 1.5rem auto; }
+      main section.resform div.bg-image img {
+        max-height: 68rem;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        overflow: hidden; }
+      main section.resform div.bg-image div.formdiv {
+        position: absolute;
+        top: 11rem;
+        width: 100%; }
+        main section.resform div.bg-image div.formdiv form fieldset {
+          margin: 1rem 4%;
+          border: none;
+          border-radius: 20px;
+          padding: 2rem 2rem 2rem 1.5rem; }
+          main section.resform div.bg-image div.formdiv form fieldset legend {
+            display: none; }
+        main section.resform div.bg-image div.formdiv form fieldset.form1 {
+          background-color: rgba(251, 251, 242, 0.7); }
+        main section.resform div.bg-image div.formdiv form label.top,
+        main section.resform div.bg-image div.formdiv form div {
+          display: block;
+          padding-top: 1rem; }
+        main section.resform div.bg-image div.formdiv form label.top input,
+        main section.resform div.bg-image div.formdiv form label.top select,
+        main section.resform div.bg-image div.formdiv form label.top textarea {
+          -webkit-appearance: none;
+          display: block;
+          font-size: 1rem;
+          border: solid 1px #999;
+          border-radius: 4px;
+          padding: 0.75rem;
+          color: #555;
+          width: 93%;
+          max-width: 28rem;
+          background-color: rgba(255, 255, 255, 0.5); }
+        main section.resform div.bg-image div.formdiv form label input:focus,
+        main section.resform div.bg-image div.formdiv form label select:focus,
+        main section.resform div.bg-image div.formdiv form label textarea:focus {
+          border: 1px solid black;
+          outline: none !important;
+          box-shadow: 0 0 3px rgba(0, 0, 0, 0.5); }
+        main section.resform div.bg-image div.formdiv form label.sbs {
+          display: block;
+          padding: 0.75rem;
+          color: #555; }
+        main section.resform div.bg-image div.formdiv form label.top input:focus:required:invalid {
+          border-color: #990000; }
+        main section.resform div.bg-image div.formdiv form div.button-div {
+          margin: 1rem 4%; }
+          main section.resform div.bg-image div.formdiv form div.button-div input.submitBtn {
+            border: none;
+            background-color: #D88C8C;
+            padding: 1rem;
+            margin: 0 0 2rem 0;
+            height: 3.5rem;
+            border: 2px solid rgba(0, 0, 0, 0.3);
+            border-radius: 20px;
+            font-size: 1.25rem; }
+          main section.resform div.bg-image div.formdiv form div.button-div input[type="submit"]:hover {
+            background-color: #DFA0A0; }
 
+/************************************************/
 /* Footer --------------------------------------*/
+/************************************************/
 footer {
   background-color: #EDE0D0;
   display: flex;
@@ -511,11 +597,15 @@ footer {
   /                 Temple Inn & Suites
   /                   - Medium View -
   /*****************************************************/
+  /************************************************/
   /* Global Styles -------------------------------*/
+  /************************************************/
   body {
     font-size: 14px; }
 
+  /************************************************/
   /* Header --------------------------------------*/
+  /************************************************/
   header {
     /* Navigation --------------------------------*/ }
     header a div.logo-box img {
@@ -531,11 +621,17 @@ footer {
     header div.responsive {
       top: 85px; }
 
+  /************************************************/
   /* Main ----------------------------------------*/
+  /************************************************/
   main {
     /* Home: Hero/Banner Image -------------------*/
     /* Home: Page Tiles --------------------------*/
-    /* Home: Temple Feature ----------------------*/ }
+    /* Home: Temple Feature ----------------------*/
+    /**********************************************/
+    /* Reservations Page -------------------------*/
+    /**********************************************/
+    /* Reservations Page: Form Settings ----------*/ }
     main section.hero {
       max-height: 34rem; }
       main section.hero img.home-banner {
@@ -550,8 +646,22 @@ footer {
       top: 3rem;
       left: 4rem;
       padding: 2rem; }
+    main section.resform div.formdiv {
+      max-width: 33rem; }
+      main section.resform div.formdiv form fieldset {
+        margin: 1rem 2rem;
+        padding: 2rem; }
+      main section.resform div.formdiv form label.top input,
+      main section.resform div.formdiv form label.top select,
+      main section.resform div.formdiv form label.top textarea {
+        width: 100%;
+        max-width: 23rem; }
+      main section.resform div.formdiv form div.button-div {
+        margin: 1rem 2rem; }
 
+  /************************************************/
   /* Footer --------------------------------------*/
+  /************************************************/
   footer address {
     flex-direction: row;
     justify-content: space-around;
@@ -565,11 +675,15 @@ footer {
   /                 Temple Inn & Suites
   /                   - Large View -
   /*****************************************************/
+  /************************************************/
   /* Global Styles -------------------------------*/
+  /************************************************/
   body {
     font-size: 16px; }
 
+  /************************************************/
   /* Header --------------------------------------*/
+  /************************************************/
   header {
     flex-direction: row;
     justify-content: space-between;
@@ -624,7 +738,9 @@ footer {
     header div.responsive {
       display: none; }
 
+  /************************************************/
   /* Main ----------------------------------------*/
+  /************************************************/
   main {
     /* Home: Hero/Banner Image -------------------*/
     /* Home: Page Tiles --------------------------*/ }

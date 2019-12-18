@@ -3,13 +3,17 @@
 /                   - Medium View -
 /*****************************************************/
 
+/************************************************/
 /* Global Styles -------------------------------*/
+/************************************************/
 
 body {
   font-size: 14px;
 }
 
+/************************************************/
 /* Header --------------------------------------*/
+/************************************************/
 
 header {
   a div.logo-box {
@@ -41,7 +45,9 @@ header {
   }
 }
 
+/************************************************/
 /* Main ----------------------------------------*/
+/************************************************/
 
 main {
 
@@ -49,7 +55,7 @@ main {
 
   section.hero {
     max-height: 34rem;
-    
+
     img.home-banner {
       max-height: 34rem;
       left: -5rem;
@@ -65,8 +71,7 @@ main {
   section.page-tiles {
     flex-direction: row;
 
-    a.page-tile {
-    }
+    a.page-tile {}
   }
 
   /* Home: Temple Feature ----------------------*/
@@ -80,9 +85,44 @@ main {
       padding: 2rem;
     }
   }
+
+  /**********************************************/
+  /* Reservations Page -------------------------*/
+  /**********************************************/
+
+  /* Reservations Page: Form Settings ----------*/
+
+  section.resform {
+
+    div.formdiv {
+      max-width: 33rem;
+
+      form {
+
+        fieldset {
+          margin: 1rem 2rem;
+          padding: 2rem;
+        }
+
+        label.top input,
+        label.top select,
+        label.top textarea {
+          width: 100%;
+          max-width: 23rem;
+        }
+
+        div.button-div {
+          margin: 1rem 2rem;
+        }
+      }
+    }
+  }
+
 }
 
+/************************************************/
 /* Footer --------------------------------------*/
+/************************************************/
 
 footer address {
   flex-direction: row;

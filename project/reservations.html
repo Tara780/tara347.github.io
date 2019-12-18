@@ -67,7 +67,55 @@
   </header>
 
   <main>
-    
+    <section class="resform">
+      <h2 class="center">Reservations</h2>
+      <p class="center large">To make a reservation, please provide the following information.</p>
+      <div class="bg-image">
+        <img src="images/reservationbackground.jpg" alt="Salt Lake temple at twilight">
+        <div class="formdiv">
+          <form method="get" action="thanks.html">
+            <fieldset class="form1">
+              <legend>Reservation Information</legend>
+              <label class="top">Full Name<span class="red">*</span> <input type="text" name="name"
+                  pattern="[a-zA-Z\s]{5,}" required></label>
+              <label class="top">Phone Number<span class="red">*</span> <input type="tel" name="phone"
+                  placeholder="2085555555" required></label>
+              <label class="top">Email<span class="red">*</span> <input type="email" name="email"
+                  placeholder="someone@website.com" required></label>
+              <label class="top">Check In <input type="date" name="date"></label>
+              <label class="top">Check Out <input type="date" name="date"></label>
+              <label class="top">Location
+                <input list="locations" name="location" placeholder="please select &#9662;">
+                <datalist id="locations">
+                  <option value="Boston, Massachusetts">
+                  <option value="Kansas City, Missouri">
+                  <option value="Orlando, Florida">
+                  <option value="Toronto, Ontario">
+                </datalist>
+              </label>
+              <label class="top">Room Type
+                <input list="rooms" name="roomtype" placeholder="please select &#9662;">
+                <datalist id="rooms">
+                  <option value="Economy - 2 Full Beds">
+                  <option value="Economy - 1 Queen Bed">
+                  <option value="Economy - 2 Queen Beds">
+                  <option value="Suite - 1 Queen Bed">
+                  <option value="Suite - 2 Queen Beds">
+                  <option value="Suite - 1 King Bed">
+                </datalist>
+              </label>
+              <div class="divlabel">Contact Preference</div>
+              <label class="sbs"><input type="radio" name="contactpref" value="yes"> phone</label>
+              <label class="sbs"><input type="radio" name="contactpref" value="maybe"> email</label>
+              <label class="top">Additional Information <textarea name="comments" rows="7"></textarea></label>
+            </fieldset>
+            <div class="button-div">
+              <input type="submit" value="Request Reservation" class="submitBtn">
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer>
