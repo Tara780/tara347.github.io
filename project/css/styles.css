@@ -333,6 +333,9 @@ h6 {
 .center {
   text-align: center; }
 
+.large {
+  font-size: 1.25rem; }
+
 h2 {
   margin-bottom: 1rem; }
 
@@ -509,7 +512,7 @@ main {
         overflow: hidden; }
       main section.resform div.bg-image div.formdiv {
         position: absolute;
-        top: 11rem;
+        top: 12rem;
         width: 100%; }
         main section.resform div.bg-image div.formdiv form fieldset {
           margin: 1rem 4%;

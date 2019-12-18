@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Temple Inn & Suites | Home</title>
+  <meta name="description"
+    content="Temple Inn & Suites - Hotel accomodations and specialized services for LDS temple patrons and their families">
+  <link href="css/styles.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <header>
+    <a href="index.html">
+      <div class="logo-box">
+        <img src="images/logo.png" alt="logo for Temple Inn & Suites - gold cursive T in front of temple silhouette">
+        <h1>Temple Inn <span class="fancy">&</span> Suites</h1>
+      </div>
+    </a>
+    <nav>
+      <ul class="navigation">
+        <li>
+          <div class="top-decoration">
+            <img class="active-decoration" src="images/topdecoration.png" alt="elegant scrollwork decoration">
+          </div>
+          <a href="reservations.html" class="active">Reservations</a>
+          <div class="bottom-decoration">
+            <img class="active-decoration" src="images/bottomdecoration.png" alt="elegant scrollwork decoration">
+          </div>
+        </li>
+        <li class="dropdown">
+          <div class="top-decoration"></div>
+          <a href="services.html">Services</a>
+          <div class="bottom-decoration"></div>
+          <div class="dropdown-menu">
+            <a href="receptions.html">Receptions</a>
+            <a href="missionaries.html">Missionaries</a>
+          </div>
+        </li>
+        <li>
+          <div class="top-decoration"></div>
+          <a href="temples.html">Temples</a>
+          <div class="bottom-decoration"></div>
+        </li>
+        <li>
+          <div class="top-decoration"></div>
+          <a href="contact.html">Contact</a>
+          <div class="bottom-decoration"></div>
+        </li>
+        <li>
+          <div class="top-decoration"></div>
+          <a href="#" onclick="toggleMenu()">&#9776;</a>
+          <div class="bottom-decoration"></div>
+        </li>
+      </ul>
+    </nav>
+    <div class="drop-down">
+      <a class="active" href="reservations.html">Reservations</a>
+      <a href="services.html">Services</a>
+      <a class="responsive-menu indent" href="receptions.html">Receptions</a>
+      <a class="responsive-menu indent" href="missionaries.html">Missionaries</a>
+      <a href="temples.html">Temples</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="resform">
+      <h2 class="center">Thank you!</h2>
+      <p class="center large">We have received your request and will contact you to finalize your reservation. If you
+        have any questions, please call (248) 555-6432.</p>
+      <div class="bg-image">
+        <img src="images/reservationbackground.jpg" alt="Salt Lake temple at twilight">
+        <div class="formdiv">
+          <form method="get" action="thanks.html">
+            <fieldset class="form1">
+              <legend>Reservation Information</legend>
+              <label class="top">Full Name<span class="red">*</span> <input type="text" name="name"
+                  pattern="[a-zA-Z\s]{5,}" required></label>
+              <label class="top">Phone Number<span class="red">*</span> <input type="tel" name="phone"
+                  placeholder="2085555555" required></label>
+              <label class="top">Email<span class="red">*</span> <input type="email" name="email"
+                  placeholder="someone@website.com" required></label>
+              <label class="top">Check In <input type="date" name="date"></label>
+              <label class="top">Check Out <input type="date" name="date"></label>
+              <label class="top">Location
+                <input list="locations" name="location" placeholder="please select &#9662;">
+                <datalist id="locations">
+                  <option value="Boston, Massachusetts">
+                  <option value="Kansas City, Missouri">
+                  <option value="Orlando, Florida">
+                  <option value="Toronto, Ontario">
+                </datalist>
+              </label>
+              <label class="top">Room Type
+                <input list="rooms" name="roomtype" placeholder="please select &#9662;">
+                <datalist id="rooms">
+                  <option value="Economy - 2 Full Beds">
+                  <option value="Economy - 1 Queen Bed">
+                  <option value="Economy - 2 Queen Beds">
+                  <option value="Suite - 1 Queen Bed">
+                  <option value="Suite - 2 Queen Beds">
+                  <option value="Suite - 1 King Bed">
+                </datalist>
+              </label>
+              <div class="divlabel">Contact Preference</div>
+              <label class="sbs"><input type="radio" name="contactpref" value="yes"> phone</label>
+              <label class="sbs"><input type="radio" name="contactpref" value="maybe"> email</label>
+              <label class="top">Additional Information <textarea name="comments" rows="7"></textarea></label>
+            </fieldset>
+            <div class="button-div">
+              <input type="submit" value="Request Reservation" class="submitBtn">
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <address>
+      <div class="footer-address">
+        <a href="contact.html">
+          Temple Inn & Suites <br>
+          4800 Montgomery Lane #300 <br>
+          Bethesda, MD 20814
+        </a>
+      </div>
+      <div class="footer-contact">
+        <a href="contact.html">
+          &#9742; (248) 555-6432 <br>
+          &#9993; info@templeinnsuites.com
+        </a>
+      </div>
+    </address>
+    <div class="footer-copy">
+      &copy; <span id="currentyear"></span> Temple Inn & Suites | <a href="resources.html">Resources</a> | <a
+        href="../index.html">Tara Denniston</a>
+      <div><span id="currentdate"></span></div>
+    </div>
+  </footer>
+  <script src="js/scripts.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+  <script src="js/fonts.js"></script>
+
+</body>
+
+</html>
