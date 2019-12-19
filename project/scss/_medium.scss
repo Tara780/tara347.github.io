@@ -96,19 +96,12 @@ main {
 
     div.formdiv {
       max-width: 33rem;
+      left: 1rem;
 
       form {
 
         fieldset {
           margin: 1rem 2rem;
-          padding: 2rem;
-        }
-
-        label.top input,
-        label.top select,
-        label.top textarea {
-          width: 100%;
-          max-width: 23rem;
         }
 
         div.button-div {
@@ -118,6 +111,22 @@ main {
     }
   }
 
+  /**********************************************/
+  /* Temples Page ------------------------------*/
+  /**********************************************/
+
+  div.cards {
+
+    section {
+
+      div.left {
+
+        img {
+          max-width: 600px;          
+        } 
+      }
+    }
+  }
 }
 
 /************************************************/

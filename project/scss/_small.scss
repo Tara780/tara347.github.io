@@ -29,7 +29,7 @@ h6 {
 
 .large {
   font-size: 1.25rem;
-} 
+}
 
 h2 {
   margin-bottom: 1rem;
@@ -270,17 +270,15 @@ main {
   /* Reservations Page -------------------------*/
   /**********************************************/
 
-  .red {
-    color: #990000;
-  }
-
-  /* Reservations Page: Form Settings ----------*/
-
   section.resform {
     position: relative;
     max-width: 1200px;
     margin: 0 auto;
     overflow: hidden;
+
+    p {
+      margin: 1rem;
+    }
 
     div.bg-image {
       z-index: 0;
@@ -299,6 +297,8 @@ main {
         width: 100%;
 
         form {
+          display: flex;
+          flex-direction: column;
 
           fieldset {
             margin: 1rem 4%;
@@ -317,7 +317,8 @@ main {
 
           label.top,
           div {
-            display: block;
+            display: flex;
+            flex-direction: column;
             padding-top: 1rem;
           }
 
@@ -325,14 +326,12 @@ main {
           label.top select,
           label.top textarea {
             -webkit-appearance: none;
-            display: block;
+            display: flex;
             font-size: 1rem;
             border: solid 1px #999;
             border-radius: 4px;
             padding: 0.75rem;
             color: #555;
-            width: 93%;
-            max-width: 28rem;
             background-color: rgba(255, 255, 255, 0.5);
           }
 
@@ -345,7 +344,7 @@ main {
           }
 
           label.sbs {
-            display: block;
+            display: flex;
             padding: 0.75rem;
             color: #555;
           }
@@ -356,6 +355,7 @@ main {
 
           div.button-div {
             margin: 1rem 4%;
+            padding: 0;
 
 
             input.submitBtn {
@@ -373,6 +373,49 @@ main {
               background-color: $accentHover;
             }
           }
+        }
+      }
+    }
+  }
+
+  /**********************************************/
+  /* Temples Page ------------------------------*/
+  /**********************************************/
+
+  p.large {
+    margin: 1rem;
+  }
+
+  div.cards {
+
+    section {
+      display: grid;
+      grid-template-columns: 1fr;
+      margin: 3rem auto;
+
+      div {
+        /* display: grid; */
+        margin: 0 auto;
+      }
+
+      div.left {
+        display: grid;
+        max-width: 600px;
+
+        img {
+          display: grid;
+          justify-self: center;           
+          width: 93%;
+        } 
+      }
+
+      div.right {
+        padding: 1rem;
+
+        h3 {
+          font-family: $logoFont;
+          color: $textColor;
+          font-size: 2rem;
         }
       }
     }

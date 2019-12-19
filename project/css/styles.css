@@ -422,7 +422,9 @@ main {
   /**********************************************/
   /* Reservations Page -------------------------*/
   /**********************************************/
-  /* Reservations Page: Form Settings ----------*/ }
+  /**********************************************/
+  /* Temples Page ------------------------------*/
+  /**********************************************/ }
   main h2 {
     font-size: 3.5em; }
   main section.hero {
@@ -495,13 +497,13 @@ main {
           font-weight: bold;
           font-size: 1.25rem;
           padding-bottom: 0.5rem; }
-  main .red {
-    color: #990000; }
   main section.resform {
     position: relative;
     max-width: 1200px;
     margin: 0 auto;
     overflow: hidden; }
+    main section.resform p {
+      margin: 1rem; }
     main section.resform div.bg-image {
       z-index: 0;
       margin: 1.5rem auto; }
@@ -514,57 +516,82 @@ main {
         position: absolute;
         top: 12rem;
         width: 100%; }
-        main section.resform div.bg-image div.formdiv form fieldset {
-          margin: 1rem 4%;
-          border: none;
-          border-radius: 20px;
-          padding: 2rem 2rem 2rem 1.5rem; }
-          main section.resform div.bg-image div.formdiv form fieldset legend {
-            display: none; }
-        main section.resform div.bg-image div.formdiv form fieldset.form1 {
-          background-color: rgba(251, 251, 242, 0.7); }
-        main section.resform div.bg-image div.formdiv form label.top,
-        main section.resform div.bg-image div.formdiv form div {
-          display: block;
-          padding-top: 1rem; }
-        main section.resform div.bg-image div.formdiv form label.top input,
-        main section.resform div.bg-image div.formdiv form label.top select,
-        main section.resform div.bg-image div.formdiv form label.top textarea {
-          -webkit-appearance: none;
-          display: block;
-          font-size: 1rem;
-          border: solid 1px #999;
-          border-radius: 4px;
-          padding: 0.75rem;
-          color: #555;
-          width: 93%;
-          max-width: 28rem;
-          background-color: rgba(255, 255, 255, 0.5); }
-        main section.resform div.bg-image div.formdiv form label input:focus,
-        main section.resform div.bg-image div.formdiv form label select:focus,
-        main section.resform div.bg-image div.formdiv form label textarea:focus {
-          border: 1px solid black;
-          outline: none !important;
-          box-shadow: 0 0 3px rgba(0, 0, 0, 0.5); }
-        main section.resform div.bg-image div.formdiv form label.sbs {
-          display: block;
-          padding: 0.75rem;
-          color: #555; }
-        main section.resform div.bg-image div.formdiv form label.top input:focus:required:invalid {
-          border-color: #990000; }
-        main section.resform div.bg-image div.formdiv form div.button-div {
-          margin: 1rem 4%; }
-          main section.resform div.bg-image div.formdiv form div.button-div input.submitBtn {
+        main section.resform div.bg-image div.formdiv form {
+          display: flex;
+          flex-direction: column; }
+          main section.resform div.bg-image div.formdiv form fieldset {
+            margin: 1rem 4%;
             border: none;
-            background-color: #D88C8C;
-            padding: 1rem;
-            margin: 0 0 2rem 0;
-            height: 3.5rem;
-            border: 2px solid rgba(0, 0, 0, 0.3);
             border-radius: 20px;
-            font-size: 1.25rem; }
-          main section.resform div.bg-image div.formdiv form div.button-div input[type="submit"]:hover {
-            background-color: #DFA0A0; }
+            padding: 2rem 2rem 2rem 1.5rem; }
+            main section.resform div.bg-image div.formdiv form fieldset legend {
+              display: none; }
+          main section.resform div.bg-image div.formdiv form fieldset.form1 {
+            background-color: rgba(251, 251, 242, 0.7); }
+          main section.resform div.bg-image div.formdiv form label.top,
+          main section.resform div.bg-image div.formdiv form div {
+            display: flex;
+            flex-direction: column;
+            padding-top: 1rem; }
+          main section.resform div.bg-image div.formdiv form label.top input,
+          main section.resform div.bg-image div.formdiv form label.top select,
+          main section.resform div.bg-image div.formdiv form label.top textarea {
+            -webkit-appearance: none;
+            display: flex;
+            font-size: 1rem;
+            border: solid 1px #999;
+            border-radius: 4px;
+            padding: 0.75rem;
+            color: #555;
+            background-color: rgba(255, 255, 255, 0.5); }
+          main section.resform div.bg-image div.formdiv form label input:focus,
+          main section.resform div.bg-image div.formdiv form label select:focus,
+          main section.resform div.bg-image div.formdiv form label textarea:focus {
+            border: 1px solid black;
+            outline: none !important;
+            box-shadow: 0 0 3px rgba(0, 0, 0, 0.5); }
+          main section.resform div.bg-image div.formdiv form label.sbs {
+            display: flex;
+            padding: 0.75rem;
+            color: #555; }
+          main section.resform div.bg-image div.formdiv form label.top input:focus:required:invalid {
+            border-color: #990000; }
+          main section.resform div.bg-image div.formdiv form div.button-div {
+            margin: 1rem 4%;
+            padding: 0; }
+            main section.resform div.bg-image div.formdiv form div.button-div input.submitBtn {
+              border: none;
+              background-color: #D88C8C;
+              padding: 1rem;
+              margin: 0 0 2rem 0;
+              height: 3.5rem;
+              border: 2px solid rgba(0, 0, 0, 0.3);
+              border-radius: 20px;
+              font-size: 1.25rem; }
+            main section.resform div.bg-image div.formdiv form div.button-div input[type="submit"]:hover {
+              background-color: #DFA0A0; }
+  main p.large {
+    margin: 1rem; }
+  main div.cards section {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 3rem auto; }
+    main div.cards section div {
+      /* display: grid; */
+      margin: 0 auto; }
+    main div.cards section div.left {
+      display: grid;
+      max-width: 600px; }
+      main div.cards section div.left img {
+        display: grid;
+        justify-self: center;
+        width: 93%; }
+    main div.cards section div.right {
+      padding: 1rem; }
+      main div.cards section div.right h3 {
+        font-family: "Julius Sans One", sans-serif;
+        color: black;
+        font-size: 2rem; }
 
 /************************************************/
 /* Footer --------------------------------------*/
@@ -634,7 +661,10 @@ footer {
     /**********************************************/
     /* Reservations Page -------------------------*/
     /**********************************************/
-    /* Reservations Page: Form Settings ----------*/ }
+    /* Reservations Page: Form Settings ----------*/
+    /**********************************************/
+    /* Temples Page ------------------------------*/
+    /**********************************************/ }
     main section.hero {
       max-height: 34rem; }
       main section.hero img.home-banner {
@@ -650,17 +680,14 @@ footer {
       left: 4rem;
       padding: 2rem; }
     main section.resform div.formdiv {
-      max-width: 33rem; }
+      max-width: 33rem;
+      left: 1rem; }
       main section.resform div.formdiv form fieldset {
-        margin: 1rem 2rem;
-        padding: 2rem; }
-      main section.resform div.formdiv form label.top input,
-      main section.resform div.formdiv form label.top select,
-      main section.resform div.formdiv form label.top textarea {
-        width: 100%;
-        max-width: 23rem; }
+        margin: 1rem 2rem; }
       main section.resform div.formdiv form div.button-div {
         margin: 1rem 2rem; }
+    main div.cards section div.left img {
+      max-width: 600px; }
 
   /************************************************/
   /* Footer --------------------------------------*/
@@ -746,7 +773,10 @@ footer {
   /************************************************/
   main {
     /* Home: Hero/Banner Image -------------------*/
-    /* Home: Page Tiles --------------------------*/ }
+    /* Home: Page Tiles --------------------------*/
+    /**********************************************/
+    /* Temples Page ------------------------------*/
+    /**********************************************/ }
     main section.hero {
       max-height: none;
       margin-bottom: -5rem; }
@@ -757,4 +787,12 @@ footer {
     main section.page-tiles {
       max-width: 1200px; }
     main section.temple-feature {
-      max-width: 1200px; } }
+      max-width: 1200px; }
+    main p.large {
+      margin: 1rem auto;
+      max-width: 1200px; }
+    main div.cards section {
+      grid-template-columns: 1fr 1fr;
+      max-width: 1200px; }
+      main div.cards section div.left img {
+        justify-self: start; } }

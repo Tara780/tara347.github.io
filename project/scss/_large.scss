@@ -138,4 +138,28 @@ main {
     max-width: 1200px;
   }
 
+  /**********************************************/
+  /* Temples Page ------------------------------*/
+  /**********************************************/
+
+  p.large {
+    margin: 1rem auto;
+    max-width: 1200px;
+  }
+
+  div.cards {
+
+    section {
+      grid-template-columns: 1fr 1fr;
+      max-width: 1200px;
+
+      div.left {
+
+        img {
+          justify-self: start;          
+        } 
+      }
+    }
+  }
+
 }
