@@ -153,10 +153,19 @@ main {
       grid-template-columns: 1fr 1fr;
       max-width: 1200px;
 
+      div {
+        margin: 0;
+      } 
+
+      div.temple-name {
+        grid-column: span 2;
+      }
+
       div.left {
 
         img {
-          justify-self: start;          
+          justify-self: start; 
+          width: 100%;     
         } 
       }
     }
