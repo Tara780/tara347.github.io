@@ -108,7 +108,25 @@ main {
     }
   }
 
+  /**********************************************/
+  /* Services, Receptions, & Missionaries Pages */
+  /**********************************************/
 
+  section.main-content {
+
+    div {
+      font-size: 1.25rem;
+      line-height: 1.5rem;
+
+      div.tile {
+        padding: 3rem;
+
+        div.tile-overlay {
+          margin-right: 3rem;
+        }
+      }
+    }
+  }
 
   /**********************************************/
   /* Temples Page ------------------------------*/

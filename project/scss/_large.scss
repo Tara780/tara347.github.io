@@ -139,6 +139,32 @@ main {
   }
 
   /**********************************************/
+  /* Services, Receptions, & Missionaries Pages */
+  /**********************************************/
+
+  section.main-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 1rem auto;
+
+    h2 {
+      grid-column: span 2;
+    }
+
+    div.text {
+      padding-left: 3rem;
+
+      /* p {
+        margin-bottom: 0;
+      }
+
+      ul {
+        margin-top: 0;
+      } */
+    }
+  }
+
+  /**********************************************/
   /* Temples Page ------------------------------*/
   /**********************************************/
 

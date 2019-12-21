@@ -68,7 +68,7 @@ fetch(requestURL)
       .then((response) => response.json())
       .then((jsObject) => {
         let condition = jsObject.weather[0].main;
-        conditionElem.textContent = "Condition: " + condition; // Current condition
+        conditionElem.textContent = "Conditions: " + condition; // Current condition
         let temp = Math.round(jsObject.main.temp);
         tempElem.innerHTML = "Temperature: " + temp + "&deg;F"; // Temperature
         let humidity = jsObject.main.humidity;
