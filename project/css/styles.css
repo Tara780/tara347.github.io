@@ -454,10 +454,7 @@ main {
   /**********************************************/
   /* Contact Page ------------------------------*/
   /**********************************************/
-  /* Contact Thanks Page------------------------*/
-  /************************************************/
-  /* Resources Page ------------------------------*/
-  /************************************************/ }
+  /* Contact Thanks Page------------------------*/ }
   main h2 {
     font-size: 3.5em; }
   main section.hero {
@@ -727,8 +724,6 @@ main {
       align-self: center;
       padding: 2rem;
       font-size: 1rem; }
-  main section.resource-page {
-    align-self: start; }
 
 /************************************************/
 /* Footer --------------------------------------*/
@@ -759,11 +754,11 @@ footer {
     footer div.footer-copy a {
       color: black; }
 
-/* footer.sticky {
+footer.sticky {
   position: absolute;
   bottom: 0;
-  width: 100%;
-} */
+  width: 100%; }
+
 @media only screen and (min-width: 590px) {
   /*****************************************************
   /                 Temple Inn & Suites

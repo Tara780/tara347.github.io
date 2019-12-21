@@ -616,14 +616,6 @@ main {
       font-size: 1rem;
     }
   }
-
-/************************************************/
-/* Resources Page ------------------------------*/
-/************************************************/
-  section.resource-page {
-    
-    align-self: start;
-  }
 }
 
 
@@ -673,8 +665,8 @@ footer {
   }
 }
 
-/* footer.sticky {
+footer.sticky {
   position: absolute;
   bottom: 0;
   width: 100%;
-} */
+}
