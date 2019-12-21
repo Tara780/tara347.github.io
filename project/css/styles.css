@@ -613,6 +613,20 @@ main {
           color: black; }
       main section.main-content div div.tile:hover {
         opacity: 0.7; }
+    main section.main-content div.text div.call-to-action {
+      background-color: #D88C8C;
+      margin: 2rem auto;
+      padding: 1rem;
+      width: max-content;
+      border: 2px solid rgba(0, 0, 0, 0.3);
+      border-radius: 20px; }
+      main section.main-content div.text div.call-to-action a {
+        color: black;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 1rem; }
+    main section.main-content div.text div.call-to-action:hover {
+      background-color: #DFA0A0; }
   main p.large {
     margin: 1rem; }
   main div.cards {
@@ -806,6 +820,10 @@ footer.sticky {
         padding: 3rem; }
         main section.main-content div div.tile div.tile-overlay {
           margin-right: 3rem; }
+    main section.main-content div.text div.call-to-action {
+      padding: 1rem 2rem; }
+      main section.main-content div.text div.call-to-action a {
+        font-size: 1.25rem; }
     main div.cards {
       line-height: 1.25rem; }
       main div.cards section div.left img {
@@ -935,18 +953,14 @@ footer.sticky {
     main section.main-content {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      margin: 1rem auto; }
+      margin: 1rem auto;
+      margin-bottom: 2rem; }
       main section.main-content h2 {
         grid-column: span 2; }
       main section.main-content div.text {
-        padding-left: 3rem;
-      /* p {
-        margin-bottom: 0;
-      }
-
-      ul {
-        margin-top: 0;
-      } */ }
+        padding-left: 3rem; }
+      main section.main-content div.v-space {
+        height: 4rem; }
     main p.large {
       margin: 1rem auto;
       max-width: 1200px; }
