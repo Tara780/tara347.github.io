@@ -436,7 +436,8 @@ main {
   /**********************************************/
   /**********************************************/
   /* Contact Page ------------------------------*/
-  /**********************************************/ }
+  /**********************************************/
+  /* Contact Thanks Page------------------------*/ }
   main h2 {
     font-size: 3.5em; }
   main section.hero {
@@ -647,9 +648,22 @@ main {
           padding-top: 2rem;
           width: 100%; }
     main section.contact-page div.contact-form {
+      grid-row: 1;
       background-color: #EDE0D0;
       margin: 1rem;
       border-radius: 20px; }
+  main div.thanks-message {
+    display: grid;
+    justify-self: center;
+    align-self: center;
+    margin: 2rem;
+    background-color: rgba(251, 251, 242, 0.7);
+    border-radius: 20px; }
+    main div.thanks-message p {
+      display: grid;
+      align-self: center;
+      padding: 2rem;
+      font-size: 1rem; }
 
 /************************************************/
 /* Footer --------------------------------------*/
@@ -679,6 +693,11 @@ footer {
     text-align: center; }
     footer div.footer-copy a {
       color: black; }
+
+footer.sticky {
+  position: absolute;
+  bottom: 0;
+  width: 100%; }
 
 @media only screen and (min-width: 590px) {
   /*****************************************************
@@ -857,7 +876,8 @@ footer {
     /**********************************************/
     /**********************************************/
     /* Contact Page ------------------------------*/
-    /**********************************************/ }
+    /**********************************************/
+    /* Contact Thanks Page------------------------*/ }
     main section.hero {
       max-height: none;
       margin-bottom: -5rem; }
@@ -891,4 +911,7 @@ footer {
       main section.contact-page div.contact-info {
         padding: 4rem; }
       main section.contact-page div.contact-form {
-        margin: 4rem; } }
+        grid-row: auto;
+        margin: 4rem; }
+    main div.thanks-message {
+      height: 30rem; } }

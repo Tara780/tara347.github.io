@@ -480,6 +480,7 @@ main {
   section.contact-page {
     display: grid;
     grid-template-columns: 1fr;
+    
     margin: 0 auto;
 
     div.contact-info {
@@ -509,9 +510,28 @@ main {
     }
 
     div.contact-form {
+      grid-row: 1;
       background-color: $mainColorLight;
       margin: 1rem;
       border-radius: 20px;
+    }
+  }
+
+  /* Contact Thanks Page------------------------*/
+
+  div.thanks-message {
+    display: grid;
+    justify-self: center;
+    align-self: center;
+    margin: 2rem;
+    background-color: $backgroundColor70;
+    border-radius: 20px;
+
+    p {
+      display: grid;
+      align-self: center;
+      padding: 2rem;
+      font-size: 1rem;
     }
   }
 }
@@ -559,4 +579,10 @@ footer {
       color: $textColor;
     }
   }
+}
+
+footer.sticky {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }

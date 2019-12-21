@@ -186,7 +186,14 @@ main {
     }
 
     div.contact-form {
+      grid-row: auto;
       margin: 4rem;
     }
+  }
+
+  /* Contact Thanks Page------------------------*/
+
+  div.thanks-message {
+    height: 30rem;
   }
 }
