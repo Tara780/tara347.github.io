@@ -572,58 +572,64 @@ main {
               background-color: #DFA0A0; }
   main p.large {
     margin: 1rem; }
-  main div.cards section {
-    display: grid;
-    grid-template-columns: 1fr;
-    margin: 3rem auto;
-    max-width: 600px; }
-    main div.cards section div {
-      margin: 0 auto; }
-    main div.cards section div.temple-name {
-      /* grid-column: span 1; */
-      margin: 0 auto;
-      padding: 0 1rem; }
-      main div.cards section div.temple-name h3 {
-        font-family: "Julius Sans One", sans-serif;
-        color: black;
-        font-size: 2rem;
-        line-height: 2rem;
-        /* padding: 0 2rem; */ }
-    main div.cards section div.left {
+  main div.cards {
+    line-height: 1rem; }
+    main div.cards section {
       display: grid;
+      grid-template-columns: 1fr;
+      margin: 3rem auto;
       max-width: 600px; }
-      main div.cards section div.left img {
-        display: grid;
-        justify-self: center;
-        width: 93%; }
-    main div.cards section div.right {
-      display: grid;
-      /*grid-template-columns: 1.2fr 0.8fr; */
-      /* grid-template-rows: 0.5fr 2fr 4fr; */
-      /*grid-template-rows: 1fr 2fr;*/
-      /* justify-content: space-between; */
-      margin: 0;
-      padding: 0 0.5rem;
-      /* font-size: 0.9rem; */ }
-      main div.cards section div.right div.quad {
-        /* display: block; */
-        /* justify-content: start; */
-        margin: 0 1rem; }
-        main div.cards section div.right div.quad h4 {
-          font-family: "Open Sans", sans-serif;
-          /* color: $textColor; */
-          font-size: 1.25rem;
-          margin: 1rem 0;
-          /* text-align: left; */ }
-        main div.cards section div.right div.quad h5 {
-          font-family: "Open Sans", sans-serif;
+      main div.cards section div {
+        margin: 0 auto; }
+      main div.cards section div.temple-name {
+        /* grid-column: span 1; */
+        margin: 0 auto;
+        padding: 0 1rem; }
+        main div.cards section div.temple-name h3 {
+          font-family: "Julius Sans One", sans-serif;
           color: black;
-          margin: 0 0 -0.5rem 0;
-          font-style: italic; }
-        main div.cards section div.right div.quad ul {
-          padding-left: 0; }
-          main div.cards section div.right div.quad ul li {
-            list-style: none; }
+          font-size: 2rem;
+          line-height: 2rem;
+          text-align: center;
+          /* padding: 0 2rem; */ }
+      main div.cards section div.left {
+        display: grid;
+        max-width: 600px; }
+        main div.cards section div.left img {
+          display: grid;
+          justify-self: center;
+          width: 93%; }
+      main div.cards section div.right {
+        display: grid;
+        /* grid-template-columns: 1.2fr 0.8fr; */
+        /* grid-template-rows: 0.5fr 2fr 4fr; */
+        /*grid-template-rows: 1fr 2fr;*/
+        /* justify-content: space-between; */
+        margin: 0;
+        padding: 0 0.5rem;
+        /* font-size: 0.9rem; */
+        /* div.quad5 {
+          grid-column: span 2;
+        } */ }
+        main div.cards section div.right div.quad {
+          /* display: block; */
+          /* justify-content: start; */
+          margin: 0 1rem; }
+          main div.cards section div.right div.quad h4 {
+            font-family: "Open Sans", sans-serif;
+            /* color: $textColor; */
+            font-size: 1.25rem;
+            margin: 1rem 0;
+            /* text-align: left; */ }
+          main div.cards section div.right div.quad h5 {
+            font-family: "Open Sans", sans-serif;
+            color: black;
+            margin: 0 0 -0.5rem 0;
+            font-style: italic; }
+          main div.cards section div.right div.quad ul {
+            padding-left: 0; }
+            main div.cards section div.right div.quad ul li {
+              list-style: none; }
 
 /************************************************/
 /* Footer --------------------------------------*/
@@ -718,10 +724,15 @@ footer {
         margin: 1rem 2rem; }
       main section.resform div.formdiv form div.button-div {
         margin: 1rem 2rem; }
-    main div.cards section div.left img {
-      max-width: 600px; }
-    main div.cards section div.right {
-      padding: 1rem 2rem; }
+    main div.cards {
+      line-height: 1.25rem; }
+      main div.cards section div.left img {
+        max-width: 600px; }
+      main div.cards section div.right {
+        grid-template-columns: 1.2fr 0.8fr;
+        padding: 1rem 2rem; }
+        main div.cards section div.right div.quad5 {
+          grid-column: span 2; }
 
   /************************************************/
   /* Footer --------------------------------------*/
@@ -825,13 +836,15 @@ footer {
     main p.large {
       margin: 1rem auto;
       max-width: 1200px; }
-    main div.cards section {
-      grid-template-columns: 1fr 1fr;
-      max-width: 1200px; }
-      main div.cards section div {
-        margin: 0; }
-      main div.cards section div.temple-name {
-        grid-column: span 2; }
-      main div.cards section div.left img {
-        justify-self: start;
-        width: 100%; } }
+    main div.cards {
+      line-height: 1.5rem; }
+      main div.cards section {
+        grid-template-columns: 1fr 1fr;
+        max-width: 1200px; }
+        main div.cards section div {
+          margin: 0; }
+        main div.cards section div.temple-name {
+          grid-column: span 2; }
+        main div.cards section div.left img {
+          justify-self: start;
+          width: 100%; } }

@@ -387,6 +387,7 @@ main {
   }
 
   div.cards {
+    line-height: 1rem;
 
     section {
       display: grid;
@@ -408,6 +409,7 @@ main {
           color: $textColor;
           font-size: 2rem;
           line-height: 2rem;
+          text-align: center;
           /* padding: 0 2rem; */
         }
       }
@@ -425,7 +427,7 @@ main {
 
       div.right {
         display: grid;
-        /*grid-template-columns: 1.2fr 0.8fr; */
+        /* grid-template-columns: 1.2fr 0.8fr; */
         /* grid-template-rows: 0.5fr 2fr 4fr; */
         /*grid-template-rows: 1fr 2fr;*/
         /* justify-content: space-between; */
@@ -461,6 +463,10 @@ main {
             }
           }
         }
+
+        /* div.quad5 {
+          grid-column: span 2;
+        } */
 
 
       }
