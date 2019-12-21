@@ -13,8 +13,6 @@ html {
 
 body {
   min-height: 100%;
-  display: grid;
-  grid-template-rows: 1fr auto;
   background-color: $backgroundColor;
   color: $textColor;
   font-size: 12px;
@@ -233,6 +231,7 @@ main {
     flex-direction: column;
     width: 98%;
     margin: 0 auto;
+    margin-top: 1.5rem;
 
     a.page-tile {
       background-color: $mainColorLight;
@@ -253,6 +252,7 @@ main {
   section.temple-feature {
     width: 98%;
     margin: 1rem auto;
+    margin-bottom: 2rem;
     position: relative;
 
     div.feature-img {

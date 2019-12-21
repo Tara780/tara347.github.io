@@ -321,8 +321,6 @@ html {
 
 body {
   min-height: 100%;
-  display: grid;
-  grid-template-rows: 1fr auto;
   background-color: #FBFBF2;
   color: black;
   font-size: 12px;
@@ -493,7 +491,8 @@ main {
     display: flex;
     flex-direction: column;
     width: 98%;
-    margin: 0 auto; }
+    margin: 0 auto;
+    margin-top: 1.5rem; }
     main section.page-tiles a.page-tile {
       background-color: #EDE0D0;
       margin: 1rem; }
@@ -504,6 +503,7 @@ main {
   main section.temple-feature {
     width: 98%;
     margin: 1rem auto;
+    margin-bottom: 2rem;
     position: relative; }
     main section.temple-feature div.feature-img {
       margin: 1rem;
