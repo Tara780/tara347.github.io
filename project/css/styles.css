@@ -316,11 +316,23 @@ template {
 /************************************************/
 /* Global Styles -------------------------------*/
 /************************************************/
+html {
+  height: 100%; }
+
 body {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: 1fr auto;
   background-color: #FBFBF2;
   color: black;
   font-size: 12px;
   font-family: "Open Sans", sans-serif; }
+
+header {
+  max-height: 6rem; }
+
+main {
+  min-height: 70vh; }
 
 h2,
 h3,
@@ -347,6 +359,10 @@ h2 {
 
 .logo-font {
   font-family: "Julius Sans One", sans-serif; }
+
+footer {
+  grid-row-start: 3;
+  grid-row-end: 4; }
 
 /************************************************/
 /* Header --------------------------------------*/
@@ -440,7 +456,10 @@ main {
   /**********************************************/
   /* Contact Page ------------------------------*/
   /**********************************************/
-  /* Contact Thanks Page------------------------*/ }
+  /* Contact Thanks Page------------------------*/
+  /************************************************/
+  /* Resources Page ------------------------------*/
+  /************************************************/ }
   main h2 {
     font-size: 3.5em; }
   main section.hero {
@@ -708,6 +727,8 @@ main {
       align-self: center;
       padding: 2rem;
       font-size: 1rem; }
+  main section.resource-page {
+    align-self: start; }
 
 /************************************************/
 /* Footer --------------------------------------*/
@@ -738,11 +759,11 @@ footer {
     footer div.footer-copy a {
       color: black; }
 
-footer.sticky {
+/* footer.sticky {
   position: absolute;
   bottom: 0;
-  width: 100%; }
-
+  width: 100%;
+} */
 @media only screen and (min-width: 590px) {
   /*****************************************************
   /                 Temple Inn & Suites
@@ -959,8 +980,6 @@ footer.sticky {
         grid-column: span 2; }
       main section.main-content div.text {
         padding-left: 3rem; }
-      main section.main-content div.v-space {
-        height: 4rem; }
     main p.large {
       margin: 1rem auto;
       max-width: 1200px; }

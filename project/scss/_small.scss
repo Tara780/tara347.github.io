@@ -7,11 +7,26 @@
 /* Global Styles -------------------------------*/
 /************************************************/
 
+html {
+  height: 100%;
+}
+
 body {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: 1fr auto;
   background-color: $backgroundColor;
   color: $textColor;
   font-size: 12px;
   font-family: $bodyFont;
+}
+
+header {
+  max-height: 6rem;
+}
+
+main {
+  min-height: 70vh;
 }
 
 h2,
@@ -47,9 +62,10 @@ h2 {
   font-family: $logoFont;
 }
 
-
-
-
+footer {
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
 
 /************************************************/
 /* Header --------------------------------------*/
@@ -600,7 +616,17 @@ main {
       font-size: 1rem;
     }
   }
+
+/************************************************/
+/* Resources Page ------------------------------*/
+/************************************************/
+  section.resource-page {
+    
+    align-self: start;
+  }
 }
+
+
 
 /************************************************/
 /* Footer --------------------------------------*/
@@ -647,8 +673,8 @@ footer {
   }
 }
 
-footer.sticky {
+/* footer.sticky {
   position: absolute;
   bottom: 0;
   width: 100%;
-}
+} */
