@@ -23,17 +23,33 @@ h6 {
   color: $headingColor;
 }
 
+h2 {
+  margin-bottom: 1rem;
+}
+
 .center {
   text-align: center;
+}
+
+.fancy {
+  font-family: $fancyFont;
+}
+
+.hidden {
+  display: none;
 }
 
 .large {
   font-size: 1.25rem;
 }
 
-h2 {
-  margin-bottom: 1rem;
+.logo-font {
+  font-family: $logoFont;
 }
+
+
+
+
 
 /************************************************/
 /* Header --------------------------------------*/
@@ -66,7 +82,6 @@ header {
         font-weight: normal;
 
         span.fancy {
-          font-family: $fancyFont;
           font-size: 1.75rem;
         }
       }
@@ -295,85 +310,87 @@ main {
         position: absolute;
         top: 12rem;
         width: 100%;
+      }
+    }
+  }
 
-        form {
-          display: flex;
-          flex-direction: column;
+  /* Form Settings (Reservations & Contact) ----*/
 
-          fieldset {
-            margin: 1rem 4%;
-            border: none;
-            border-radius: 20px;
-            padding: 2rem 2rem 2rem 1.5rem;
+  form {
+    display: flex;
+    flex-direction: column;
 
-            legend {
-              display: none;
-            }
-          }
+    fieldset {
+      margin: 1rem 4%;
+      border: none;
+      border-radius: 20px;
+      padding: 2rem 2rem 2rem 1.5rem;
 
-          fieldset.form1 {
-            background-color: $backgroundColor50;
-          }
+      legend {
+        display: none;
+      }
+    }
 
-          label.top,
-          div {
-            display: flex;
-            flex-direction: column;
-            padding-top: 1rem;
-          }
+    fieldset.form1 {
+      background-color: $backgroundColor50;
+    }
 
-          label.top input,
-          label.top select,
-          label.top textarea {
-            -webkit-appearance: none;
-            display: flex;
-            font-size: 1rem;
-            border: solid 1px #999;
-            border-radius: 4px;
-            padding: 0.75rem;
-            color: #555;
-            background-color: rgba(255, 255, 255, 0.5);
-          }
+    label.top,
+    div {
+      display: flex;
+      flex-direction: column;
+      padding-top: 1rem;
+    }
 
-          label input:focus,
-          label select:focus,
-          label textarea:focus {
-            border: 1px solid black;
-            outline: none !important;
-            box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
-          }
+    label.top input,
+    label.top select,
+    label.top textarea {
+      -webkit-appearance: none;
+      display: flex;
+      font-size: 1rem;
+      border: solid 1px #999;
+      border-radius: 4px;
+      padding: 0.75rem;
+      color: #555;
+      background-color: rgba(255, 255, 255, 0.5);
+    }
 
-          label.sbs {
-            display: flex;
-            padding: 0.75rem;
-            color: #555;
-          }
+    label input:focus,
+    label select:focus,
+    label textarea:focus {
+      border: 1px solid black;
+      outline: none !important;
+      box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+    }
 
-          label.top input:focus:required:invalid {
-            border-color: #990000;
-          }
+    label.sbs {
+      display: flex;
+      padding: 0.75rem;
+      color: #555;
+    }
 
-          div.button-div {
-            margin: 1rem 4%;
-            padding: 0;
+    label.top input:focus:required:invalid {
+      border-color: #990000;
+    }
+
+    div.button-div {
+      margin: 1rem 4%;
+      padding: 0;
 
 
-            input.submitBtn {
-              border: none;
-              background-color: $accentColor;
-              padding: 1rem;
-              margin: 0 0 2rem 0;
-              height: 3.5rem;
-              border: 2px solid rgba(0, 0, 0, 0.3);
-              border-radius: 20px;
-              font-size: 1.25rem;
-            }
+      input.submitBtn {
+        border: none;
+        background-color: $accentColor;
+        padding: 1rem;
+        margin: 0 0 2rem 0;
+        height: 3.5rem;
+        border: 2px solid rgba(0, 0, 0, 0.3);
+        border-radius: 20px;
+        font-size: 1.25rem;
+      }
 
-            input[type="submit"]:hover {
-              background-color: $accentHover;
-            }
-          }
-        }
+      input[type="submit"]:hover {
+        background-color: $accentHover;
       }
     }
   }
@@ -397,10 +414,9 @@ main {
 
       div {
         margin: 0 auto;
-      } 
-      
+      }
+
       div.temple-name {
-        /* grid-column: span 1; */
         margin: 0 auto;
         padding: 0 1rem;
 
@@ -410,7 +426,6 @@ main {
           font-size: 2rem;
           line-height: 2rem;
           text-align: center;
-          /* padding: 0 2rem; */
         }
       }
 
@@ -427,30 +442,21 @@ main {
 
       div.right {
         display: grid;
-        /* grid-template-columns: 1.2fr 0.8fr; */
-        /* grid-template-rows: 0.5fr 2fr 4fr; */
-        /*grid-template-rows: 1fr 2fr;*/
-        /* justify-content: space-between; */
         margin: 0;
         padding: 0 0.5rem;
-        /* font-size: 0.9rem; */
 
         div.quad {
-          /* display: block; */
-          /* justify-content: start; */
           margin: 0 1rem;
 
           h4 {
             font-family: $bodyFont;
-            /* color: $textColor; */
             font-size: 1.25rem;
             margin: 1rem 0;
-            /* text-align: left; */
           }
 
           h5 {
             font-family: $bodyFont;
-            color: $textColor; 
+            color: $textColor;
             margin: 0 0 -0.5rem 0;
             font-style: italic;
           }
@@ -463,13 +469,49 @@ main {
             }
           }
         }
-
-        /* div.quad5 {
-          grid-column: span 2;
-        } */
-
-
       }
+    }
+  }
+
+  /**********************************************/
+  /* Contact Page ------------------------------*/
+  /**********************************************/
+
+  section.contact-page {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0 auto;
+
+    div.contact-info {
+      display: grid;
+      justify-content: center;
+      padding: 1rem;
+      
+
+      div {
+        display: grid;
+
+        p {
+          font-size: 1rem;
+          line-height: 1.5rem;
+
+          span {
+            font-size: 1.5rem;
+          }
+        }
+
+        iframe {
+          padding-top: 2rem;
+          width: 100%;
+          
+        }        
+      }
+    }
+
+    div.contact-form {
+      background-color: $mainColorLight;
+      margin: 1rem;
+      border-radius: 20px;
     }
   }
 }

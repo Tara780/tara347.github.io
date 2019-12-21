@@ -90,26 +90,25 @@ main {
   /* Reservations Page -------------------------*/
   /**********************************************/
 
-  /* Reservations Page: Form Settings ----------*/
+  div.formdiv {
+    max-width: 33rem;
+    left: 1rem;
+  }
 
-  section.resform {
+  /* Form Settings (Reservations & Contact) ----*/
 
-    div.formdiv {
-      max-width: 33rem;
-      left: 1rem;
+  form {
 
-      form {
+    fieldset {
+      margin: 1rem 2rem;
+    }
 
-        fieldset {
-          margin: 1rem 2rem;
-        }
-
-        div.button-div {
-          margin: 1rem 2rem;
-        }
-      }
+    div.button-div {
+      margin: 1rem 2rem;
     }
   }
+
+
 
   /**********************************************/
   /* Temples Page ------------------------------*/
@@ -123,8 +122,8 @@ main {
       div.left {
 
         img {
-          max-width: 600px;          
-        } 
+          max-width: 600px;
+        }
       }
 
       div.right {
@@ -135,6 +134,33 @@ main {
           grid-column: span 2;
         }
       }
+    }
+  }
+
+  /**********************************************/
+  /* Contact Page ------------------------------*/
+  /**********************************************/
+
+  section.contact-page {
+
+    div.contact-info {
+      padding: 2rem;
+
+      div {
+        p {
+          font-size: 1.25rem;
+          line-height: 1.75rem;
+
+          span {
+            font-size: 2rem;
+          }
+        }
+      }
+    }
+
+    div.contact-form {
+      margin: 2rem auto;
+      width: 500px;
     }
   }
 }

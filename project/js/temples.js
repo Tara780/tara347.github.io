@@ -142,22 +142,6 @@ fetch(requestURL)
       }
       right.appendChild(quad5);
 
-      
-
-      
-      
-      
-      /*birthdate.textContent = 'Date of Birth: ' + temples[i].birthdate;
-      birthplace.textContent = 'Place of Birth: ' + temples[i].birthplace;
-       */
-
-      
-      
-      
-      /*card.appendChild(birthdate);
-      card.appendChild(birthplace);
-      */
-
       card.appendChild(left);
       card.appendChild(right);
 

@@ -172,4 +172,21 @@ main {
     }
   }
 
+  /**********************************************/
+  /* Contact Page ------------------------------*/
+  /**********************************************/
+
+  section.contact-page {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1200px;
+
+    div.contact-info {
+      padding: 4rem;
+    }
+
+    div.contact-form {
+      margin: 4rem;
+    }
+  }
 }
